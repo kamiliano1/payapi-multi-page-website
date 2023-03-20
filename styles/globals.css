@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'DM Serif Display', serif;
+        background-color: teal;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-sanJuanBlue
+  }
+
+  p {
+    @apply text-300
+  }
+
+  .klasa {
+    /* box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25); */
+  }

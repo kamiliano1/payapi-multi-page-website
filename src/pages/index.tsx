@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import Navbar from "../Layout/Navbar/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,8 +17,10 @@ export default function Home() {
       </Head>
       <main>
         <body>
-          <h1>INDEX</h1>
-          <p>
+          <Navbar />
+          {/* <h1>INDEX</h1>
+          <p>Test</p> */}
+          {/* <p>
             {`Pricing About Contact Schedule a Demo Start building with our APIs
             for absolutely free. Enter email address Schedule a Demo Have any
             questions? Contact Us Who we work with Today, millions of people
@@ -38,7 +41,7 @@ export default function Home() {
             payments with us through a flow designed with the user experience in
             mind. Customers could instantly authenticate their account. Ready to
             start? Enter email address Schedule a Demo Pricing About Contact`}
-          </p>
+          </p> */}
         </body>
       </main>
     </>
