@@ -1,10 +1,13 @@
 import React from "react";
+type MainButtonProps = {
+  cssClasses: string;
+};
 
-const MainButton = () => {
+const MainButton: React.FC<MainButtonProps> = ({ cssClasses }) => {
   return (
     <button
-      className="bg-darkPink py-[0.9375rem] text-200 rounded-3xl font-publicSans font-bold text-linkWaterWhite tracking-[-0.115385px]
-    hover:bg-charmPink disabled:opacity-50"
+      className={`bg-darkPink text-200 rounded-3xl font-publicSans font-bold text-linkWaterWhite tracking-[-0.115385px]
+    hover:bg-charmPink disabled:opacity-50 ${cssClasses} `}
     >
       Schedule a Demo
     </button>

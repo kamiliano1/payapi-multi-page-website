@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Navbar from "../Layout/Navbar/Navbar";
+import Hero from "../components/Home/Hero";
+import Work from "../components/Home/Work";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,12 +17,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <body>
-          <Navbar />
-          {/* <h1>INDEX</h1>
+
+      {/* <Navbar /> */}
+      <main className="">
+        {/* <Hero /> */}
+        <Work />
+        {/* <h1>INDEX</h1>
           <p>Test</p> */}
-          {/* <p>
+        {/* <p>
             {`Pricing About Contact Schedule a Demo Start building with our APIs
             for absolutely free. Enter email address Schedule a Demo Have any
             questions? Contact Us Who we work with Today, millions of people
@@ -42,7 +46,6 @@ export default function Home() {
             mind. Customers could instantly authenticate their account. Ready to
             start? Enter email address Schedule a Demo Pricing About Contact`}
           </p> */}
-        </body>
       </main>
     </>
   );
