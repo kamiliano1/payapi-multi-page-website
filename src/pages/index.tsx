@@ -18,9 +18,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <Navbar /> */}
+      <Navbar />
       <main className="">
-        {/* <Hero /> */}
+        <Hero />
         <Work />
         {/* <h1>INDEX</h1>
           <p>Test</p> */}

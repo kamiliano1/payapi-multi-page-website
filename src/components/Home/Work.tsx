@@ -12,15 +12,15 @@ type WorkProps = {};
 
 const Work: React.FC<WorkProps> = () => {
   return (
-    <div className="bg-mirageBlue text-center text-linkWaterWhite px-6 ">
-      <div className="py-20 lg:flex flex">
-        {/* <Image
+    <div className="bg-mirageBlue text-center text-linkWaterWhite  ">
+      <div className="py-20 lg:flex max-w-[1440px] mx-auto lg:gap-32 relative overflow-hidden">
+        <Image
           src={circle}
           alt=""
-          className="absolute top-[-590px] w-[780px] h-[780px] object-none left-0 sm:top-[-575px]"
-        /> */}
+          className="  absolute top-[-590px] w-[780px] h-[780px] object-none left-0 sm:top-[-575px] lg:top-[-420px] lg:left-[-300px]"
+        />
         <div
-          className="flex items-center flex-wrap gap-8 sm:gap-x-16 w-full justify-center mb-14 -order-last
+          className="px-6 flex items-center flex-wrap gap-8 sm:gap-x-16 w-full justify-center mb-14 lg:max-w-[550px] lg:gap-y-0
         "
         >
           <Image src={teslaIcon} alt="tesla icon" className="" />
@@ -34,7 +34,7 @@ const Work: React.FC<WorkProps> = () => {
           <Image src={googleIcon} alt="google icon" className="" />
           <Image src={nvidiaIcon} alt="nvidia icon" className="" />
         </div>
-        <div className="lg:-order-first lg:text-start">
+        <div className="px-6 lg:text-start">
           <h2 className="text-600 leading-9 text-linkWaterWhite font-bold mb-5 sm:text-700">
             Who we work with
           </h2>
