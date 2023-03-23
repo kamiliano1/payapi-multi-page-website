@@ -11,7 +11,7 @@ type VerticalNavProps = {
 const VerticalNav: React.FC<VerticalNavProps> = ({ isOpen, closeNav }) => {
   return (
     <div
-      className="bg-mirageBlue px-6 flex flex-col fixed h-full top-0 right-0 pt-12 w-[80%] text-center primary-navigation"
+      className="bg-mirageBlue px-6 flex flex-col fixed h-full top-0 right-0 pt-12 w-[80%] text-center primary-navigation z-50"
       aria-expanded={isOpen}
     >
       <button>
@@ -27,7 +27,7 @@ const VerticalNav: React.FC<VerticalNavProps> = ({ isOpen, closeNav }) => {
         className="text-400 opacity-70 text-linkWaterWhite mt-[2.6875rem]"
         href="pricing"
       >
-        Pricinssg{" "}
+        Pricing{" "}
       </Link>
       <Link
         className="text-400 opacity-70 text-linkWaterWhite py-8"

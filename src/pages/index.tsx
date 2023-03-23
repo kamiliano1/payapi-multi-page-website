@@ -5,6 +5,8 @@ import styles from "@/styles/Home.module.css";
 import Navbar from "../Layout/Navbar/Navbar";
 import Hero from "../components/Home/Hero";
 import Work from "../components/Home/Work";
+import Implement from "../components/Home/Implement";
+import Footer from "../Layout/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +24,8 @@ export default function Home() {
       <main className="">
         <Hero />
         <Work />
+        <Implement />
+        <Footer />
         {/* <h1>INDEX</h1>
           <p>Test</p> */}
         {/* <p>
