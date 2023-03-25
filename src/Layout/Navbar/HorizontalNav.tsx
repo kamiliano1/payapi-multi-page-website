@@ -11,13 +11,19 @@ type VerticalNavProps = {
 const HorizontalNav: React.FC<VerticalNavProps> = ({}) => {
   return (
     <div className="hidden text-center items-center text-sanJuanBlue sm:flex  w-full ">
-      <Link className="text-400 opacity-70 mr-8" href="pricing">
+      <Link
+        className="text-400 opacity-70 mr-8 hover:opacity-100"
+        href="pricing"
+      >
         Pricing{" "}
       </Link>
-      <Link className="text-400 opacity-70 mr-8" href="about">
+      <Link className="text-400 opacity-70 mr-8 hover:opacity-100" href="about">
         About{" "}
       </Link>
-      <Link className="text-400 opacity-70 mr-8" href="contact">
+      <Link
+        className="text-400 opacity-70 mr-8 hover:opacity-100"
+        href="contact"
+      >
         Contact{" "}
       </Link>
       <MainButton cssClasses={"px-[1.55rem] py-[0.625rem] sm:ml-auto "} />

@@ -13,7 +13,7 @@ type WorkProps = {};
 const Work: React.FC<WorkProps> = () => {
   return (
     <div className="bg-mirageBlue text-center text-linkWaterWhite ">
-      <div className="py-20 lg:flex max-w-[1400px] mx-auto lg:gap-32 relative lg:px-20 ">
+      <div className="py-20 lg:flex max-w-[1400px] mx-auto lg:gap-32 relative lg:px-20 overflow-hidden">
         <Image
           src={circle}
           alt=""

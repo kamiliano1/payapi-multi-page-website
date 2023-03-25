@@ -1,4 +1,5 @@
 import MainButton from "@/src/Layout/Buttons/MainButton";
+import FormEmail from "@/src/Layout/Input/FormEmail";
 import InputText from "@/src/Layout/Input/InputText";
 import Image from "next/image";
 import React from "react";
@@ -7,7 +8,7 @@ type HeroProps = {};
 
 const Hero: React.FC<HeroProps> = () => {
   return (
-    <div className="text-center px-6 lg:px-20 mb-20 lg:flex lg:items-center lg:text-start max-w-[1400px] mx-auto z-10">
+    <div className="text-center px-6 lg:px-20 mb-20 lg:flex lg:items-center lg:text-start max-w-[1400px] mx-auto z-10 ">
       <Image
         src={singlePhoneImg}
         alt="phone screen"
@@ -22,10 +23,7 @@ const Hero: React.FC<HeroProps> = () => {
         >
           Start building with our APIs for absolutely free.
         </h1>
-        <form className="flex flex-col sm:flex-row sm:items-center sm:justify-center lg:justify-start lg:mt-5 max-w-[445px] mx-auto">
-          <InputText />
-          <MainButton cssClasses="py-[0.625rem] sm:px-6 input-box-shadow" />
-        </form>
+        <FormEmail />
         <p className="text-100 font-publicSans text-lightSanJuanBlue mt-6 lg:mt-2 lg:px-3">
           Have any questions? <span className="font-bold">Contact Us</span>{" "}
         </p>

@@ -8,11 +8,12 @@ import consumerPaymentIcon from "../../../public/assets/home/desktop/icon-consum
 import InputText from "@/src/Layout/Input/InputText";
 import MainButton from "@/src/Layout/Buttons/MainButton";
 import circle from "../../../public/assets/shared/desktop/bg-pattern-circle.svg";
+import FormEmail from "@/src/Layout/Input/FormEmail";
 type ImplementProps = {};
 
 const Implement: React.FC<ImplementProps> = () => {
   return (
-    <div className="text-center px-6 lg:px-20 mb-20 max-w-[1400px] mx-auto ">
+    <div className="text-center px-6 lg:px-20 mb-20 max-w-[1400px] mx-auto  overflow-hidden">
       <section className="lg:flex lg:items-center">
         <Image
           src={implementImg}
@@ -97,13 +98,7 @@ const Implement: React.FC<ImplementProps> = () => {
         <h3 className="text-600 leading-9 font-bold mt-14 sm:text-700 sm:mb-10">
           Ready to start?
         </h3>
-        <form
-          className="flex flex-col sm:flex-row sm:items-center 
-        sm:justify-center lg:justify-start lg:mt-5 max-w-[445px] mx-auto lg:mx-0"
-        >
-          <InputText />
-          <MainButton cssClasses="py-[0.625rem] sm:px-6 input-box-shadow" />
-        </form>
+        <FormEmail />
       </section>
     </div>
   );
