@@ -1,10 +1,8 @@
 import Head from "next/head";
-import React from "react";
 import Image from "next/image";
+import React from "react";
 import circle from "../../public/assets/shared/desktop/bg-pattern-circle.svg";
-import Hero from "../components/Home/Hero";
-import Implement from "../components/Home/Implement";
-import Work from "../components/Home/Work";
+import Member from "../components/Home/About/Member";
 import Pricing from "../components/Pricing/Pricing";
 import Footer from "../Layout/Footer/Footer";
 import Navbar from "../Layout/Navbar/Navbar";
@@ -25,21 +23,20 @@ const pricing: React.FC<pricingProps> = () => {
           href="./assets/favicon-32x32.png"
         />
       </Head>
-      <div className="max-w-[1400px] mx-auto overflow-hidden bg">
-        <Navbar />
-        <Image
-          src={circle}
-          alt=""
-          className="absolute w-[780px] h-[780px] sm:w-[949px] sm:h-[949px] lg:w-[780px] lg:h-[780px]  
-          top-[-644px] -right-[200px] -z-10 lg:left-[650px] lg:top-[-250px] "
-        />
+      <div className="">
+        <div className="max-w-[1400px] mx-auto overflow-hidden relative lg:px-20">
+          <Navbar />
+          <Member />
+          <Image
+            src={circle}
+            alt=""
+            className="absolute w-[780px] h-[780px] top-[-644px] -right-[200px] 
+          sm:top-[-525px] sm:-right-[410px] lg:w-[900px] lg:h-[900px]  lg:-right-[210px] lg:top-[-655px]"
+          />
 
-        <main className="">
-          <Pricing />
-          {/* <Work />
-        <Implement />
-        <Footer /> */}
-        </main>
+          <main className="">{/* <Pricing /> */}</main>
+        </div>
+        {/* <Footer /> */}
       </div>
     </>
   );

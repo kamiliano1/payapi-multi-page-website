@@ -25,12 +25,13 @@ export default function Home() {
           href="./assets/favicon-32x32.png"
         />
       </Head>
-      <div className="max-w-[1400px] mx-auto overflow-hidden bg">
+      <div className="max-w-[1400px] mx-auto overflow-hidden relative">
         <Navbar />
         <Image
           src={circle}
           alt=""
-          className="absolute w-[780px] h-[780px] sm:w-[949px] sm:h-[949px] lg:w-[780px] lg:h-[780px] object-none top-[-540px] -z-10 lg:left-[650px] lg:top-[-250px] "
+          className="absolute w-[780px] h-[780px] sm:w-[949px] sm:h-[949px] lg:w-[780px] 
+          lg:h-[780px] object-none top-[-540px] -z-10 lg:left-[650px] lg:top-[-250px] "
         />
         <Hero />
       </div>
