@@ -1,5 +1,7 @@
 import Head from "next/head";
 import React from "react";
+import Image from "next/image";
+import circle from "../../public/assets/shared/desktop/bg-pattern-circle.svg";
 import Hero from "../components/Home/Hero";
 import Implement from "../components/Home/Implement";
 import Work from "../components/Home/Work";
@@ -24,15 +26,21 @@ const pricing: React.FC<pricingProps> = () => {
         />
       </Head>
       <div className="max-w-[1400px] mx-auto overflow-hidden bg">
-        {/* <Navbar />
-        <Hero /> */}
-        <Pricing />
-      </div>
-      <main className="">
-        {/* <Work />
+        <Navbar />
+        <Image
+          src={circle}
+          alt=""
+          className="absolute w-[780px] h-[780px] sm:w-[949px] sm:h-[949px] lg:w-[780px] lg:h-[780px]  
+          top-[-644px] -right-[200px] -z-10 lg:left-[650px] lg:top-[-250px] "
+        />
+
+        <main className="">
+          <Pricing />
+          {/* <Work />
         <Implement />
         <Footer /> */}
-      </main>
+        </main>
+      </div>
     </>
   );
 };

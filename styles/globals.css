@@ -36,27 +36,21 @@
   }
 
   /* CheckBox */
-
+/* 
   input[type="checkbox"] {
-    /* background: red;
-    -webkit-box-shadow: 0px 0px 0px 1px rgba(255,0,0,1);
-    -moz-box-shadow: 0px 0px 0px 1px rgba(255,0,0,1);
-    box-shadow: 0px 0px 0px 1px rgba(255,0,0,1);
-    border: none; */
-    /* outline: 1px solid #1e5180 */
-  }
-  input[type="checkbox"] {
-    /* background: blue; */
+    background: blue;
     accent-color: BLUE;
   }
   input[type="checkbox"]:checked {
-    /* background: blue; */
+    background: blue;
     accent-color: red;
     padding-left: 1rem;
   }
-  input:not(:checked) {
+  input[type="checkbox"]:not(:checked) {
     opacity: 0.3;
     accent-color: yellow;
     background-color: blue;
     color:aqua
   }
+  
+   */

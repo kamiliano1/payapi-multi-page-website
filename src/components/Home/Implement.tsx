@@ -9,6 +9,7 @@ import InputText from "@/src/Layout/Input/InputText";
 import MainButton from "@/src/Layout/Buttons/MainButton";
 import circle from "../../../public/assets/shared/desktop/bg-pattern-circle.svg";
 import FormEmail from "@/src/Layout/Input/FormEmail";
+import ReadyToStartForm from "@/src/Layout/Input/ReadyToStartForm";
 type ImplementProps = {};
 
 const Implement: React.FC<ImplementProps> = () => {
@@ -94,12 +95,7 @@ const Implement: React.FC<ImplementProps> = () => {
           </p>
         </div>
       </section>
-      <section className="lg:flex lg:justify-between ">
-        <h3 className="text-600 leading-9 font-bold mt-14 sm:text-700 sm:mb-10">
-          Ready to start?
-        </h3>
-        <FormEmail />
-      </section>
+      <ReadyToStartForm />
     </div>
   );
 };
