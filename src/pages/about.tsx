@@ -5,8 +5,8 @@ import Footer from "../Layout/Footer/Footer";
 import circle from "../../public/assets/shared/desktop/bg-pattern-circle.svg";
 import Navbar from "../Layout/Navbar/Navbar";
 import Pricing from "./pricing";
-import Member from "../components/Home/About/Member";
-import Vision from "../components/Home/About/Vision";
+import Member from "../components/About/Member";
+import Vision from "../components/About/Vision";
 
 const about = () => {
   return (

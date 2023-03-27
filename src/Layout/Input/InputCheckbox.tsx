@@ -12,7 +12,6 @@ const InputCheckbox: React.FC<InputCheckboxProps> = ({ checked, name }) => {
       ) : (
         <span className="w-[12px] h-[8px]"></span>
       )}
-      {/* <input type="checkbox" className="" /> */}
       <p
         className={`text-base leading-7 font-publicSans text-mirageBlue ${
           !checked && "opacity-50"

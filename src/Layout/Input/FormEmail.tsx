@@ -10,7 +10,7 @@ const FormEmail: React.FC<FormEmailProps> = () => {
       className="flex flex-col sm:flex-row sm:items-center 
   sm:justify-center lg:justify-start lg:mt-5 max-w-[445px] mx-auto lg:mx-0"
     >
-      <InputText />
+      <InputText inputType="email" inputPlaceholder="Enter email address" />
       <MainButton cssClasses="py-[0.625rem] sm:px-6 input-box-shadow" />
     </form>
   );
