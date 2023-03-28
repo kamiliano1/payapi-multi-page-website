@@ -11,7 +11,7 @@ const FormEmail: React.FC<FormEmailProps> = () => {
   sm:justify-center lg:justify-start lg:mt-5 max-w-[445px] mx-auto lg:mx-0"
     >
       <InputText inputType="email" inputPlaceholder="Enter email address" />
-      <MainButton cssClasses="py-[0.625rem] sm:px-6 input-box-shadow" />
+      <MainButton cssClasses="py-[.938rem] sm:px-6 input-box-shadow" />
     </form>
   );
 };

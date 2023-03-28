@@ -12,7 +12,7 @@ const Hero: React.FC<HeroProps> = () => {
       <Image
         src={singlePhoneImg}
         alt="phone screen"
-        className="w-[228px] lg:w-[330px] mx-auto lg:order-10"
+        className="w-[228px] lg:w-[330px] mx-auto lg:order-10 "
       />
       <div className="">
         <h1

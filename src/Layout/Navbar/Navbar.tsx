@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import circle from "../../../public/assets/shared/desktop/bg-pattern-circle.svg";
 import webLogo from "../../../public/assets/shared/desktop/logo.svg";
@@ -24,20 +25,17 @@ const Navbar = () => {
   return (
     <>
       <nav className="flex w-full max-w-[1400px] mx-auto relative   ">
-        {/* <Image
-          src={circle}
-          alt=""
-          className="absolute w-[780px] h-[780px] sm:w-[949px] sm:h-[949px] lg:w-[780px] lg:h-[780px] object-none top-[-540px] -z-10 lg:left-[650px] lg:top-[-250px] "
-        /> */}
         <div className="mt-10 px-6  flex items-center justify-between md:justify-start w-full  max-w-[1110px]  ">
-          <Image src={webLogo} alt="page logo" className="sm:mr-10" />
+          <Link className="text-400 opacity-70 mr-8 hover:opacity-100" href="/">
+            <Image src={webLogo} alt="page logo" className="sm:mr-10" />
+          </Link>
           <HorizontalNav />
-          <button>
+          <button className="z-[100]">
             {!isOpen && (
               <Image
                 src={hamburgerIcon}
                 alt="hamburger icon"
-                className="sm:hidden"
+                className="sm:hidden "
                 onClick={() => setIsOpen((prev) => !prev)}
               />
             )}

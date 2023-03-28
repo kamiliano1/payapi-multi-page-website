@@ -32,6 +32,9 @@ module.exports = {
       fontFamily: {
         publicSans: "'Public Sans', sans-serif",
       },
+      screens: {
+        sm: "650px",
+      },
     },
   },
   plugins: [],

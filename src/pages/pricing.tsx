@@ -26,7 +26,6 @@ const pricing: React.FC<pricingProps> = () => {
       <div className="">
         <div className="max-w-[1400px] mx-auto overflow-hidden relative lg:px-20">
           <Navbar />
-          {/* <Member /> */}
           <Image
             src={circle}
             alt=""

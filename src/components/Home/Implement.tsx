@@ -1,15 +1,12 @@
+import ReadyToStartForm from "@/src/Layout/Input/ReadyToStartForm";
 import Image from "next/image";
 import React from "react";
-import implementImg from "../../../public/assets/home/desktop/illustration-easy-to-implement.svg";
-import twoPhonesImg from "../../../public/assets/home/desktop/illustration-simple-ui.svg";
-import personalFinancesIcon from "../../../public/assets/home/desktop/icon-personal-finances.svg";
 import bankingCoverageIcon from "../../../public/assets/home/desktop/icon-banking-and-coverage.svg";
 import consumerPaymentIcon from "../../../public/assets/home/desktop/icon-consumer-payments.svg";
-import InputText from "@/src/Layout/Input/InputText";
-import MainButton from "@/src/Layout/Buttons/MainButton";
+import personalFinancesIcon from "../../../public/assets/home/desktop/icon-personal-finances.svg";
+import implementImg from "../../../public/assets/home/desktop/illustration-easy-to-implement.svg";
+import twoPhonesImg from "../../../public/assets/home/desktop/illustration-simple-ui.svg";
 import circle from "../../../public/assets/shared/desktop/bg-pattern-circle.svg";
-import FormEmail from "@/src/Layout/Input/FormEmail";
-import ReadyToStartForm from "@/src/Layout/Input/ReadyToStartForm";
 type ImplementProps = {};
 
 const Implement: React.FC<ImplementProps> = () => {
@@ -19,7 +16,7 @@ const Implement: React.FC<ImplementProps> = () => {
         <Image
           src={implementImg}
           alt="computer window with code"
-          className="w-[350px] lg:w-auto mx-auto lg:-ml-14"
+          className="w-[350px] sm:w-[450px] lg:w-auto mx-auto lg:-ml-14"
         />
         <div className="flex-grow lg:text-start">
           <h2 className="text-4xl leading-9 tracking-[-0.276923px] text-sanJuanBlue sm:text-700 font-bold ">
@@ -41,10 +38,9 @@ const Implement: React.FC<ImplementProps> = () => {
         <Image
           src={circle}
           alt=""
-          // className="absolute top-[-590px] w-[780px] h-[780px] object-none left-0 sm:top-[-575px] lg:top-[-420px] lg:left-[-300px]"
           className="hidden lg:block absolute right-[-410px] w-[780px] h-[780px] "
         />
-        <div className="w-[35%] lg:text-start">
+        <div className=" lg:text-start">
           <h2 className="text-4xl leading-9 tracking-[-0.276923px] text-sanJuanBlue sm:text-700 font-bold">
             Simple UI & UX
           </h2>
