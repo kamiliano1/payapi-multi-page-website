@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import circle from "../../public/assets/shared/desktop/bg-pattern-circle.svg";
 import bigCircle from "../../public/assets/shared/desktop/bg-pattern-circle-big.svg";
 import Hero from "../components/Home/Hero";
@@ -8,6 +8,7 @@ import Work from "../components/Home/Work";
 import Footer from "../Layout/Footer/Footer";
 import Navbar from "../Layout/Navbar/Navbar";
 import { useState, useEffect } from "react";
+import CircleBackground from "../Layout/CircleBackground/CircleBackground";
 
 export default function Home() {
   const [windowWidth, setWindowWidth] = useState<number>(0);
@@ -34,14 +35,19 @@ export default function Home() {
           href="./assets/favicon-32x32.png"
         />
       </Head>
-      <div className="max-w-[1400px] mx-auto overflow-hidden relative lg:px-20">
+      <div className="overflow-hidden relative lg:px-20 max-w-[1400px] mx-auto">
         <Navbar />
-        <Image
-          src={windowWidth > 650 && windowWidth < 1200 ? bigCircle : circle}
+        <CircleBackground
+          cssClasses="-z-[1] w-[780px] h-[780px] top-[-525px]
+           sm:w-[949px] sm:h-[949px] sm:top-[-700px] lg:top-[-320px] lg:left-[700px]"
+          circleSection="home"
+        />
+        {/* <Image
+          src={windowWidth > 692 && windowWidth < 1200 ? bigCircle : circle}
           alt=""
           className="object-none absolute -z-[1] w-[780px] h-[780px] top-[-525px]
-           sm:w-[949px] sm:h-[949px] sm:top-[-700px]"
-        />
+           sm:w-[949px] sm:h-[949px] sm:top-[-700px] lg:top-[-320px] lg:left-[700px]"
+        /> */}
         <Hero />
       </div>
       <main className="">

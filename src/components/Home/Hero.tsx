@@ -2,13 +2,14 @@ import MainButton from "@/src/Layout/Buttons/MainButton";
 import FormEmail from "@/src/Layout/Input/FormEmail";
 import InputText from "@/src/Layout/Input/InputText";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import singlePhoneImg from "../../../public/assets/home/desktop/illustration-phone-mockup.svg";
 type HeroProps = {};
 
 const Hero: React.FC<HeroProps> = () => {
   return (
-    <div className="text-center px-6 lg:px-20 mb-20 lg:flex lg:items-center lg:text-start max-w-[1400px] mx-auto z-10 ">
+    <div className="text-center px-6 mb-20 lg:flex lg:items-center lg:text-start max-w-[1110px] mx-auto z-10 lg:px-0">
       <Image
         src={singlePhoneImg}
         alt="phone screen"
@@ -25,7 +26,10 @@ const Hero: React.FC<HeroProps> = () => {
         </h1>
         <FormEmail />
         <p className="text-100 font-publicSans text-lightSanJuanBlue mt-6 lg:mt-2 lg:px-3">
-          Have any questions? <span className="font-bold">Contact Us</span>{" "}
+          Have any questions?{" "}
+          <Link className="font-bold" href="/contact">
+            Contact Us
+          </Link>
         </p>
       </div>
     </div>

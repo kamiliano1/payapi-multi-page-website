@@ -4,6 +4,7 @@ import React from "react";
 import circle from "../../public/assets/shared/desktop/bg-pattern-circle.svg";
 import Member from "../components/About/Member";
 import Pricing from "../components/Pricing/Pricing";
+import CircleBackground from "../Layout/CircleBackground/CircleBackground";
 import Footer from "../Layout/Footer/Footer";
 import Navbar from "../Layout/Navbar/Navbar";
 
@@ -24,14 +25,18 @@ const pricing: React.FC<pricingProps> = () => {
         />
       </Head>
       <div className="">
-        <div className="max-w-[1400px] mx-auto overflow-hidden relative lg:px-20">
+        <div className="overflow-hidden relative lg:px-20 max-w-[1400px] mx-auto">
+          <CircleBackground cssClasses=" w-[780px] h-[780px] top-[-594px] left-[74px] object-none " />
           <Navbar />
-          <Image
+          {/* <Navbar /> */}
+          {/* <Image
             src={circle}
             alt=""
-            className="absolute w-[780px] h-[780px] top-[-644px] -right-[200px] 
-          sm:top-[-525px] sm:-right-[410px] lg:w-[900px] lg:h-[900px]  lg:-right-[210px] lg:top-[-655px]"
-          />
+            // className="absolute w-[780px] h-[780px] top-[-544px]"
+            className="absolute w-[780px] h-[780px] top-[-644px] -right-[200px]
+            sm:top-[-525px] sm:-right-[410px]  lg:-right-[210px] lg:top-[-655px]"
+          /> */}
+          {/* <CircleBackground cssClasses=" w-[780px] h-[780px] left-[300px]" /> */}
 
           <main className="">
             <Pricing />

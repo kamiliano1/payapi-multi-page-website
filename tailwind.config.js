@@ -33,7 +33,7 @@ module.exports = {
         publicSans: "'Public Sans', sans-serif",
       },
       screens: {
-        sm: "650px",
+        sm: "693px",
       },
     },
   },

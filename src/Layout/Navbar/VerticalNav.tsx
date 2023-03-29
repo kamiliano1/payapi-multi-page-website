@@ -19,7 +19,7 @@ const VerticalNav: React.FC<VerticalNavProps> = ({ isOpen, closeNav }) => {
           src={closeIcon}
           onClick={closeNav}
           alt="close icon"
-          className="ml-auto"
+          className="ml-auto z-[100]"
         />
       </button>
       <span className="h-[1px] w-full bg-linkWaterWhite opacity-[0.15] mt-6 "></span>

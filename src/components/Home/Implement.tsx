@@ -1,3 +1,4 @@
+import CircleBackground from "@/src/Layout/CircleBackground/CircleBackground";
 import ReadyToStartForm from "@/src/Layout/Input/ReadyToStartForm";
 import Image from "next/image";
 import React from "react";
@@ -11,8 +12,8 @@ type ImplementProps = {};
 
 const Implement: React.FC<ImplementProps> = () => {
   return (
-    <div className="text-center px-6 lg:px-20 mb-20 max-w-[1400px] mx-auto  overflow-hidden">
-      <section className="lg:flex lg:items-center">
+    <div className="text-center px-6 max-w-[1400px] mx-auto overflow-hidden lg:px-20">
+      <section className="lg:flex lg:items-center max-w-[1110px] mx-auto ">
         <Image
           src={implementImg}
           alt="computer window with code"
@@ -22,35 +23,36 @@ const Implement: React.FC<ImplementProps> = () => {
           <h2 className="text-4xl leading-9 tracking-[-0.276923px] text-sanJuanBlue sm:text-700 font-bold ">
             Easy to implement
           </h2>
-          <p className="text-200 font-publicSans text-lightSanJuanBlue mt-6 sm:max-w-[573px] sm:mx-auto lg:mx-0 ">
+          <p className="text-200 font-publicSans text-lightSanJuanBlue mt-6 max-w-[475px] mx-auto lg:mx-0 ">
             Our API comes with just a few lines of code. You’ll be up and
             running in no time. We built our documentation page to integrate
             payments functionality with ease.
           </p>
         </div>
       </section>
-      <section className="lg:flex lg:items-center relative">
+      <section className="lg:flex lg:items-center relative max-w-[1110px] mx-auto">
         <Image
           src={twoPhonesImg}
           alt="screen of two phones"
-          className="w-[350px] sm:w-[363px] lg:w-auto mx-auto mt-8 order-2  z-10"
+          className="w-[350px]  sm:w-[363px] mx-auto mt-8 order-2 z-10 lg:w-[700px] lg:mr-[-3rem]"
         />
-        <Image
+        {/* <Image
           src={circle}
           alt=""
           className="hidden lg:block absolute right-[-410px] w-[780px] h-[780px] "
-        />
-        <div className=" lg:text-start">
+        /> */}
+        <CircleBackground cssClasses="hidden lg:block absolute right-[-410px] w-[780px] h-[780px]" />
+        <div className="lg:text-start lg:w-[505px]">
           <h2 className="text-4xl leading-9 tracking-[-0.276923px] text-sanJuanBlue sm:text-700 font-bold">
             Simple UI & UX
           </h2>
-          <p className="text-200 font-publicSans text-lightSanJuanBlue mt-6 sm:max-w-[573px] mx-auto">
+          <p className="text-200 font-publicSans text-lightSanJuanBlue mt-6 sm:max-w-[445px] lg:mx-0 max-w-[475px] mx-auto">
             Our pre-built form is easy to integrate in your app or website’s
             checkout flow and designed to optimize conversion.
           </p>
         </div>
       </section>
-      <section className="sm:flex sm:gap-5 sm:my-[6.25rem]">
+      <section className="sm:flex sm:gap-5  lg:mt-6 max-w-[1110px] mx-auto">
         <div className="my-6">
           <Image
             src={personalFinancesIcon}
@@ -58,7 +60,7 @@ const Implement: React.FC<ImplementProps> = () => {
             className="mx-auto mb-8 sm:w-[88px] lg:w-[106px]"
           ></Image>
           <h3 className="font-bold mb-4 text-300">Personal Finances</h3>
-          <p className="text-200 tracking-[-0.115385px] font-publicSans text-lightSanJuanBlue">
+          <p className="text-200 tracking-[-0.115385px] font-publicSans text-lightSanJuanBlue max-w-[475px] mx-auto">
             Consolidate financial data from multiple sources and categorize
             transactions up to 2 years of history. Analyze reports to reconcile
             activities in your account.{" "}
@@ -71,7 +73,7 @@ const Implement: React.FC<ImplementProps> = () => {
             className="mx-auto mb-8 sm:w-[88px] lg:w-[106px]"
           ></Image>
           <h3 className="font-bold mb-4 text-300">Banking & Coverage</h3>
-          <p className="text-200 tracking-[-0.115385px] font-publicSans text-lightSanJuanBlue">
+          <p className="text-200 tracking-[-0.115385px] font-publicSans text-lightSanJuanBlue max-w-[475px] mx-auto">
             With our platform, you can speed up account onboarding and support
             ongoing payments for checking, savings, credit card, and brokerage
             accounts.
@@ -84,7 +86,7 @@ const Implement: React.FC<ImplementProps> = () => {
             className="mx-auto mb-8 sm:w-[88px] lg:w-[106px]"
           ></Image>
           <h3 className="font-bold mb-4 text-300">Consumer Paymentss</h3>
-          <p className="text-200 tracking-[-0.115385px] font-publicSans text-lightSanJuanBlue">
+          <p className="text-200 tracking-[-0.115385px] font-publicSans text-lightSanJuanBlue max-w-[475px] mx-auto">
             It’s easier to set up secure bank payments with us through a flow
             designed with the user experience in mind. Customers could instantly
             authenticate their account.
