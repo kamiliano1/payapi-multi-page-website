@@ -14,7 +14,7 @@ module.exports = {
       charmPink: "hsl(337, 60%, 64%)",
       linkWaterWhite: "hsl(220, 60%, 99%)",
       sanJuanBlue: "hsl(207, 33%, 32%)",
-      lightSanJuanBlue: "hsl(207, 16%, 50%)",
+      lightSanJuanBlue: "hsl(207, 16%, 46%)",
       mirageBlue: "hsl(207, 27%, 15%)",
       red: "hsl(0, 100%, 50%)",
     },

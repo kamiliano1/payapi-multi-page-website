@@ -17,12 +17,6 @@ const Footer: React.FC<FooterProps> = () => {
   return (
     <footer className="bg-mirageBlue">
       <div className="max-w-[1440px] mx-auto lg:px-20 relative overflow-hidden sm:px-[2.4375rem]">
-        {/* <Image
-          src={circle}
-          alt=""
-          className="absolute object-none w-[780px] h-[780px] top-[180px] sm:-top-52 sm:left-[430px] lg:left-[1100px]
-         "
-        /> */}
         <CircleBackground
           cssClasses=" w-[780px] h-[780px] top-[165px] 
         sm:top-[-208px] sm:left-[380px] sm:hidden "
@@ -58,13 +52,25 @@ const Footer: React.FC<FooterProps> = () => {
             </Link>
           </div>
           <div className="flex mt-11 justify-center gap-6 items-center sm:mt-0 sm:pb-0 text-linkWaterWhite sm:ml-auto">
-            <Link href="" className="z-50 text-2xl hover:text-charmPink">
+            <Link
+              href=""
+              aria-label="My Facebook page"
+              className="z-50 text-2xl hover:text-charmPink"
+            >
               <GrFacebook />
             </Link>
-            <Link href="" className="z-50 text-2xl hover:text-charmPink">
+            <Link
+              href=""
+              aria-label="My Twitter page"
+              className="z-50 text-2xl hover:text-charmPink"
+            >
               <BsTwitter />
             </Link>
-            <Link href="" className="z-50 text-2xl hover:text-charmPink">
+            <Link
+              href=""
+              aria-label="My Linkedin page"
+              className="z-50 text-2xl hover:text-charmPink"
+            >
               <BsLinkedin />
             </Link>
           </div>

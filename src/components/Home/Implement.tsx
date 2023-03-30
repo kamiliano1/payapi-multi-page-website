@@ -7,7 +7,6 @@ import consumerPaymentIcon from "../../../public/assets/home/desktop/icon-consum
 import personalFinancesIcon from "../../../public/assets/home/desktop/icon-personal-finances.svg";
 import implementImg from "../../../public/assets/home/desktop/illustration-easy-to-implement.svg";
 import twoPhonesImg from "../../../public/assets/home/desktop/illustration-simple-ui.svg";
-import circle from "../../../public/assets/shared/desktop/bg-pattern-circle.svg";
 type ImplementProps = {};
 
 const Implement: React.FC<ImplementProps> = () => {
@@ -36,11 +35,6 @@ const Implement: React.FC<ImplementProps> = () => {
           alt="screen of two phones"
           className="w-[350px] sm:w-[363px] mx-auto mt-8 order-2 z-10 lg:w-[700px] lg:mr-[-3rem]"
         />
-        {/* <Image
-          src={circle}
-          alt=""
-          className="hidden lg:block absolute right-[-410px] w-[780px] h-[780px] "
-        /> */}
         <CircleBackground cssClasses="hidden lg:block absolute right-[-410px] w-[780px] h-[780px]" />
         <div className="lg:text-start lg:w-[505px]">
           <h2 className="text-4xl leading-9 tracking-[-0.276923px] text-sanJuanBlue sm:text-700 font-bold">
