@@ -12,7 +12,7 @@ type ImplementProps = {};
 
 const Implement: React.FC<ImplementProps> = () => {
   return (
-    <div className="text-center px-6 max-w-[1400px] mx-auto overflow-hidden lg:px-20">
+    <div className="text-center px-6 sm:px-[2.4375rem] max-w-[1400px] mx-auto overflow-hidden lg:px-20">
       <section className="lg:flex lg:items-center max-w-[1110px] mx-auto ">
         <Image
           src={implementImg}
@@ -34,7 +34,7 @@ const Implement: React.FC<ImplementProps> = () => {
         <Image
           src={twoPhonesImg}
           alt="screen of two phones"
-          className="w-[350px]  sm:w-[363px] mx-auto mt-8 order-2 z-10 lg:w-[700px] lg:mr-[-3rem]"
+          className="w-[350px] sm:w-[363px] mx-auto mt-8 order-2 z-10 lg:w-[700px] lg:mr-[-3rem]"
         />
         {/* <Image
           src={circle}

@@ -41,11 +41,11 @@ const Member: React.FC<MemberProps> = () => {
 
   return (
     <div className="">
-      <div className="text-center lg:text-start mb-20 max-w-[1400px] mx-auto z-10 px-6 lg:w-[85%]">
+      <div className="text-center lg:text-start max-w-[1400px] mx-auto z-10 px-6 lg:w-[85%] lg:px-20">
         <h1 className="text-600 leading-9 font-bold mt-12 mb-10 tracking-[-0.196154px] sm:text-700 lg:text-800 sm:mt-[4.6875rem] max-w-[550px] lg:max-w-[630px] mx-auto lg:mx-0 ">
           We empower innovators by delivering access to the financial system
         </h1>
-        <div>
+        <div className="max-w-[689px] lg:max-w-[920px]">
           <div className="mb-12 sm:flex sm:text-start sm:gap-12">
             <h2 className="text-500 font-bold tracking-[-0.196154px] mb-4 sm:text-600 min-w-[180px]">
               Our Vision
@@ -58,7 +58,7 @@ const Member: React.FC<MemberProps> = () => {
               democratizing financial services through technology.{" "}
             </p>
           </div>
-          <div className="mb-12 sm:flex sm:text-start sm:gap-12 ">
+          <div className="mb-[1.75rem] sm:flex sm:text-start sm:gap-12 ">
             <h2 className="text-500 font-bold tracking-[-0.196154px] mb-4 sm:text-600 min-w-[180px]">
               Our Business
             </h2>
@@ -74,7 +74,7 @@ const Member: React.FC<MemberProps> = () => {
       <Image
         src={currentImage}
         alt="three pepole siting in the restaurant"
-        className="pt-5 w-full"
+        className="w-full py-12 "
       />
     </div>
   );

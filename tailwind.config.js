@@ -16,6 +16,7 @@ module.exports = {
       sanJuanBlue: "hsl(207, 33%, 32%)",
       lightSanJuanBlue: "hsl(207, 16%, 50%)",
       mirageBlue: "hsl(207, 27%, 15%)",
+      red: "hsl(0, 100%, 50%)",
     },
     extend: {
       fontSize: {
@@ -33,7 +34,7 @@ module.exports = {
         publicSans: "'Public Sans', sans-serif",
       },
       screens: {
-        sm: "693px",
+        sm: "746px",
       },
     },
   },

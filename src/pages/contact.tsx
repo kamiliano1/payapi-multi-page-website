@@ -29,12 +29,7 @@ const contact: React.FC<contactProps> = () => {
       <div className="">
         <div className="max-w-[1400px] mx-auto overflow-hidden relative lg:px-20">
           <Navbar />
-          <Image
-            src={circle}
-            alt=""
-            className="absolute w-[780px] h-[780px] top-[-644px] -right-[200px] 
-        sm:top-[-525px] sm:-right-[410px] lg:w-[900px] lg:h-[900px]  lg:-right-[210px] lg:top-[-655px]"
-          />
+          <div className="w-[780px] h-[780px] bg-sanJuanBlue opacity-[.2] rounded-full absolute left-[74px] top-[-634px] sm:left-[440px] sm:top-[-550px] lg:left-[800px]"></div>
 
           <Contact />
         </div>

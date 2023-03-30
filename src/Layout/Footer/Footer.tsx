@@ -16,7 +16,7 @@ type FooterProps = {};
 const Footer: React.FC<FooterProps> = () => {
   return (
     <footer className="bg-mirageBlue">
-      <div className="max-w-[1440px] mx-auto lg:px-20 relative overflow-hidden sm:px-10">
+      <div className="max-w-[1440px] mx-auto lg:px-20 relative overflow-hidden sm:px-[2.4375rem]">
         {/* <Image
           src={circle}
           alt=""
@@ -24,20 +24,20 @@ const Footer: React.FC<FooterProps> = () => {
          "
         /> */}
         <CircleBackground
-          cssClasses=" w-[780px] h-[780px] top-[180px] 
-        sm:-top-52 sm:left-[430px] 
-        lg:left-[1100px]"
+          cssClasses=" w-[780px] h-[780px] top-[165px] 
+        sm:top-[-208px] sm:left-[380px] sm:hidden "
         />
-        <div className="max-w-[1110px] mx-auto text-center sm:flex sm:justify-between pt-10 pb-14">
-          {/* <Image
-            src={webLogo}
-            alt="page logo"
-            className=" text-linkWaterWhite mx-auto py-10 sm:mx-0"
-          /> */}
-          <Link className="text-400 mr-8 hover:opacity-70 " href="/">
-            <Image src={webLogo} alt="page logo" className="mx-auto sm:mr-10" />
+        <div
+          className="sm:w-[980px] sm:h-[980px] bg-sanJuanBlue opacity-[.2] rounded-full absolute 
+         top-[165px] 
+        sm:top-[-208px] sm:left-[380px] 
+        lg:left-[1100px]"
+        ></div>
+        <div className="max-w-[1110px] mx-auto text-center sm:flex  pt-10 pb-14">
+          <Link className="text-400 mr-16 hover:opacity-70 " href="/">
+            <Image src={webLogo} alt="page logo" className="mx-auto " />
           </Link>
-          <div className="flex flex-col gap-8 sm:flex-row sm:items-center ">
+          <div className="flex flex-col gap-10 sm:flex-row sm:items-center ">
             <Link
               className="text-100 text-linkWaterWhite opacity-70 font-bold hover:opacity-100"
               href="pricing"
@@ -57,7 +57,7 @@ const Footer: React.FC<FooterProps> = () => {
               Contact{" "}
             </Link>
           </div>
-          <div className="flex mt-11 justify-center gap-6 items-center sm:mt-0 sm:pb-0 text-linkWaterWhite">
+          <div className="flex mt-11 justify-center gap-6 items-center sm:mt-0 sm:pb-0 text-linkWaterWhite sm:ml-auto">
             <Link href="" className="z-50 text-2xl hover:text-charmPink">
               <GrFacebook />
             </Link>

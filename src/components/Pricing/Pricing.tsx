@@ -7,17 +7,17 @@ type PricingProps = {};
 
 const Pricing: React.FC<PricingProps> = () => {
   return (
-    <div className="text-center px-6 lg:text-start lg:mx-auto">
-      <h1 className="text-sanJuanBlue text-600 leading-9 font-bold mt-12 sm:text-700 lg:text-800 ">
+    <div className="text-center px-6 sm:px-[2.4375rem] lg:text-start lg:mx-auto ">
+      <h1 className="text-sanJuanBlue text-600 leading-9 font-bold mt-12 sm:text-700 lg:text-800 max-w-[1110px] mx-auto">
         Pricing
       </h1>
-      <section className="max-w-[1110px]">
-        <div className="sm:flex sm:gap-3 lg:gap-7">
-          <div className="max-w-[350px]">
+      <section className="max-w-[1110px] mx-auto">
+        <div className="sm:flex sm:gap-[10px] lg:gap-7">
+          <div className="max-w-[350px] mx-auto">
             <h2 className="text-500 text-darkPink font-bold mb-4 mt-12 lg:text-600">
               Free Plan
             </h2>
-            <p className="font-publicSans text-100 text-lightSanJuanBlue pb-2 sm:h-16">
+            <p className="font-publicSans text-200 text-lightSanJuanBlue pb-2 ">
               Build and test using our core set of products with up to 100 API
               requests
             </p>
@@ -42,11 +42,11 @@ const Pricing: React.FC<PricingProps> = () => {
               buttonText="Request Access"
             />
           </div>
-          <div className="max-w-[350px]">
+          <div className="max-w-[350px] mx-auto">
             <h2 className="text-500 text-darkPink font-bold mb-4 mt-12 lg:text-600">
               Basic Plan
             </h2>
-            <p className="font-publicSans text-100 text-lightSanJuanBlue pb-2 sm:h-16">
+            <p className="font-publicSans text-200 text-lightSanJuanBlue pb-2 ">
               Launch your project with unlimited requests and no contractual
               minimums
             </p>
@@ -71,11 +71,11 @@ const Pricing: React.FC<PricingProps> = () => {
               buttonText="Request Access"
             />
           </div>
-          <div className="max-w-[350px]">
+          <div className="max-w-[350px] mx-auto">
             <h2 className="text-500 text-darkPink font-bold mb-4 mt-12 lg:text-600">
               Premium Plan
             </h2>
-            <p className="font-publicSans text-100 text-lightSanJuanBlue pb-2 sm:h-16">
+            <p className="font-publicSans text-200 text-lightSanJuanBlue pb-2 ">
               Get tailored solutions, volume pricing, and dedicated support for
               your team
             </p>

@@ -24,9 +24,12 @@ const Navbar = () => {
   }, [windowWidth]);
   return (
     <>
-      <nav className="flex relative max-w-[1110px] mx-auto px-6 sm:px-10 lg:px-0">
+      <nav className="flex relative max-w-[1110px] mx-auto px-6 sm:px-[2.4375rem] lg:px-0">
         <div className="mt-10 bg flex items-center justify-between md:justify-start w-full ">
-          <Link className="text-400 opacity-70 mr-8 hover:opacity-100" href="/">
+          <Link
+            className="text-400 opacity-70 mr-16 hover:opacity-100"
+            href="/"
+          >
             <Image src={webLogo} alt="page logo" className="sm:mr-10" />
           </Link>
           <HorizontalNav />

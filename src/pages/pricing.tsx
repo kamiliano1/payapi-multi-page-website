@@ -26,7 +26,8 @@ const pricing: React.FC<pricingProps> = () => {
       </Head>
       <div className="">
         <div className="overflow-hidden relative lg:px-20 max-w-[1400px] mx-auto">
-          <CircleBackground cssClasses=" w-[780px] h-[780px] top-[-594px] left-[74px] object-none " />
+          {/* <CircleBackground cssClasses=" w-[780px] h-[780px] top-[-594px] left-[74px] object-none " /> */}
+          <div className="w-[780px] h-[780px] bg-sanJuanBlue opacity-[.2] rounded-full absolute left-[74px] top-[-634px] sm:left-[440px] sm:top-[-550px] lg:left-[800px]"></div>
           <Navbar />
           {/* <Navbar /> */}
           {/* <Image

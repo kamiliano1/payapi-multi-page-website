@@ -41,24 +41,24 @@ const ContactForm: React.FC<ContactFormProps> = () => {
     formState: { errors },
   } = useForm<FormData>();
   return (
-    <div className="px-6 text-center">
+    <div className="text-center px-6 sm:max-w-[445px] mx-auto lg:px-0 lg:mx-0">
       {" "}
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col space-y-5"
       >
-        <div className="relative ">
+        <div className="relative">
           <input
             {...register("firstName", { required: true })}
             type="text"
             placeholder="Name"
             className={`w-full px-5 border-b-[1px] py-2 border-sanJuanBlue border-opacity-50 placeholder:opacity-50 focus:border-opacity-100 focus:outline-none  ${
               errors.firstName &&
-              `border-[#FF0000] border-opacity-50 placeholder:text-[#FF0000]`
+              `border-[red] border-opacity-50 placeholder:text-[red]`
             }`}
           />
           {errors.firstName && (
-            <p className="text-[.6875rem] leading-3 py-1 text-[#FF0000] opacity-50 absolute pt-2 px-5 z-20">
+            <p className="text-[.6875rem] leading-3 py-1 text-[red] opacity-50 absolute pt-2 px-5 z-20">
               This field can`t be empty
             </p>
           )}
@@ -78,11 +78,11 @@ const ContactForm: React.FC<ContactFormProps> = () => {
             placeholder="Email Address"
             className={`w-full px-5 border-b-[1px] py-2 border-sanJuanBlue border-opacity-50 placeholder:opacity-50 focus:border-opacity-100 focus:outline-none  ${
               errors.email &&
-              `border-[#FF0000] border-opacity-50 placeholder:text-[#FF0000]`
+              `border-[red] border-opacity-50 placeholder:text-[red]`
             }`}
           />
           {errors.email && (
-            <p className="text-[.6875rem] leading-3 py-1 text-[#FF0000] opacity-50 absolute pt-2 px-5 ">
+            <p className="text-[.6875rem] leading-3 py-1 text-[red] opacity-50 absolute pt-2 px-5 ">
               {errors.email.message
                 ? errors.email.message
                 : "This field can`t be empty"}
@@ -109,13 +109,13 @@ const ContactForm: React.FC<ContactFormProps> = () => {
           <textarea
             {...register("message", { required: true })}
             placeholder="Message"
-            className={`w-full px-5 border-b-[1px] py-2 border-sanJuanBlue border-opacity-50 placeholder:opacity-50 focus:border-opacity-100 focus:outline-none  ${
+            className={`w-full px-5 border-b-[1px] py-2  border-sanJuanBlue  border-opacity-50 placeholder:opacity-50 focus:border-opacity-100 focus:outline-none  ${
               errors.message &&
-              `border-[#FF0000] border-opacity-50 placeholder:text-[#FF0000]`
+              `border-[red] border-opacity-50 placeholder:text-[red]`
             }`}
           />
           {errors.message && (
-            <p className="text-[.6875rem] leading-3 py-1 text-[#FF0000] opacity-50 absolute pt-2 px-5 z-20">
+            <p className="text-[.6875rem] leading-3 py-1 text-[red] opacity-50 absolute pt-[0] px-5 z-20">
               This field can`t be empty
             </p>
           )}

@@ -9,7 +9,7 @@ type HeroProps = {};
 
 const Hero: React.FC<HeroProps> = () => {
   return (
-    <div className="text-center px-6 mb-20 lg:flex lg:items-center lg:text-start max-w-[1110px] mx-auto z-10 lg:px-0">
+    <div className="text-center px-6 sm:px-[2.4375rem] mb-20 lg:flex lg:items-center lg:text-start max-w-[1110px] mx-auto z-10 lg:px-0">
       <Image
         src={singlePhoneImg}
         alt="phone screen"
