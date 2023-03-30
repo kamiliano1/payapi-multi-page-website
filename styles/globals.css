@@ -20,7 +20,7 @@
     @apply text-300
   }
 
-  [aria-expanded="false"]  {
+  .nav-open {
     transform: translateX(100%);
   }
   .primary-navigation {

@@ -62,7 +62,6 @@ const Vision: React.FC<VisionProps> = () => {
           </div>
         </div>
       </div>
-
       <ReadyToStartForm cssClasses="pt-12" />
     </div>
   );

@@ -11,8 +11,9 @@ type VerticalNavProps = {
 const VerticalNav: React.FC<VerticalNavProps> = ({ isOpen, closeNav }) => {
   return (
     <div
-      className="bg-mirageBlue px-6 flex flex-col fixed h-full top-0 right-0 pt-12 w-[80%] text-center primary-navigation z-50"
-      aria-expanded={isOpen}
+      className={`bg-mirageBlue px-6 flex flex-col fixed h-full top-0 right-0 pt-12 w-[80%] text-center primary-navigation z-50 ${
+        !isOpen ? "nav-open" : ""
+      }`}
     >
       <button>
         <Image

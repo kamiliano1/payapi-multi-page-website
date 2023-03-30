@@ -1,12 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import MainButton from "../Buttons/MainButton";
-type VerticalNavProps = {
-  //   isOpen: boolean;
-  //   closeNav: MouseEventHandler<HTMLImageElement>;
-};
 
-const HorizontalNav: React.FC<VerticalNavProps> = ({}) => {
+const HorizontalNav: React.FC = () => {
   return (
     <div className="hidden text-center items-center text-sanJuanBlue sm:flex  w-full ">
       <Link

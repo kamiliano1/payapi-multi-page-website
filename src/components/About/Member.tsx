@@ -3,9 +3,8 @@ import Image, { StaticImageData } from "next/image";
 import mobileMemberImage from "../../../public/assets/about/mobile/image-team-members.jpg";
 import tabletMemberImage from "../../../public/assets/about/tablet/image-team-members.jpg";
 import desktopMemberImage from "../../../public/assets/about/desktop/image-team-members.jpg";
-type MemberProps = {};
 
-const Member: React.FC<MemberProps> = () => {
+const Member: React.FC = () => {
   const [windowWidth, setWindowWidth] = useState<number>(0);
   const [currentImage, setCurrentImage] =
     useState<StaticImageData>(desktopMemberImage);
@@ -50,7 +49,7 @@ const Member: React.FC<MemberProps> = () => {
             <h2 className="text-500 font-bold tracking-[-0.196154px] mb-4 sm:text-600 min-w-[180px]">
               Our Vision
             </h2>
-            <p className="text-200 font-publicSans text-lightSanJuanBlue  max-w-[635px]">
+            <p className="text-200 font-publicSans text-lightSanJuanBlue max-w-[635px]">
               Our main goal is to build beautiful consumer experiences along
               with developer-friendly infrastructure. The result is an
               intelligent tool that gives everyone the ability to create amazing

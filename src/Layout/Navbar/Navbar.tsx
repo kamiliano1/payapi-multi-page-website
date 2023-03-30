@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import circle from "../../../public/assets/shared/desktop/bg-pattern-circle.svg";
 import webLogo from "../../../public/assets/shared/desktop/logo.svg";
 import hamburgerIcon from "../../../public/assets/shared/mobile/menu.svg";
 import HorizontalNav from "./HorizontalNav";
@@ -20,7 +19,7 @@ const Navbar = () => {
     };
   }, []);
   useEffect(() => {
-    if (windowWidth > 640) setIsOpen(false);
+    if (windowWidth > 744) setIsOpen(false);
   }, [windowWidth]);
   return (
     <>
