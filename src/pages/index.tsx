@@ -27,13 +27,13 @@ export default function Home() {
            sm:w-[949px] sm:h-[949px] sm:top-[-700px] lg:top-[-320px] lg:left-[700px]"
           circleSection="home"
         />
-        <Hero />
+        <main>
+          <Hero />
+          <Work />
+          <Implement />
+          <Footer />
+        </main>
       </div>
-      <main>
-        <Work />
-        <Implement />
-        <Footer />
-      </main>
     </>
   );
 }
