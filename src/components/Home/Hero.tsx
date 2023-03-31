@@ -3,11 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import singlePhoneImg from "../../../public/assets/home/desktop/illustration-phone-mockup.svg";
+import { motion } from "framer-motion";
 type HeroProps = {};
 
 const Hero: React.FC<HeroProps> = () => {
   return (
-    <div className="text-center px-6 sm:px-[2.4375rem] mb-20 lg:flex lg:items-center lg:text-start max-w-[1110px] mx-auto z-10 lg:px-0">
+    <motion.div
+      transition={{ delay: 0.1 }}
+      initial={{ opacity: 0 }}
+      animate={{ y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      className="text-center px-6 sm:px-[2.4375rem] mb-20 lg:flex lg:items-center lg:text-start max-w-[1110px] mx-auto z-10 lg:px-0"
+    >
       <Image
         src={singlePhoneImg}
         alt="phone screen"
@@ -30,7 +37,7 @@ const Hero: React.FC<HeroProps> = () => {
           </Link>
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default Hero;

@@ -7,18 +7,30 @@ import consumerPaymentIcon from "../../../public/assets/home/desktop/icon-consum
 import personalFinancesIcon from "../../../public/assets/home/desktop/icon-personal-finances.svg";
 import implementImg from "../../../public/assets/home/desktop/illustration-easy-to-implement.svg";
 import twoPhonesImg from "../../../public/assets/home/desktop/illustration-simple-ui.svg";
+import { motion } from "framer-motion";
 type ImplementProps = {};
 
 const Implement: React.FC<ImplementProps> = () => {
   return (
     <div className="text-center px-6 sm:px-[2.4375rem] max-w-[1400px] mx-auto overflow-hidden lg:px-20">
       <section className="lg:flex lg:items-center max-w-[1110px] mx-auto ">
-        <Image
-          src={implementImg}
-          alt="computer window with code"
-          className="w-[350px] sm:w-[450px] lg:w-auto mx-auto lg:-ml-14"
-        />
-        <div className="flex-grow lg:text-start">
+        <motion.div
+          transition={{ duration: 0.3 }}
+          initial={{ x: -300 }}
+          whileInView={{ x: 0 }}
+        >
+          <Image
+            src={implementImg}
+            alt="computer window with code"
+            className="w-[350px] sm:w-[450px] lg:w-auto mx-auto lg:-ml-14"
+          />
+        </motion.div>
+        <motion.div
+          transition={{ duration: 0.3 }}
+          initial={{ x: 300 }}
+          whileInView={{ x: 0 }}
+          className="flex-grow lg:text-start"
+        >
           <h2 className="text-4xl leading-9 tracking-[-0.276923px] text-sanJuanBlue sm:text-700 font-bold ">
             Easy to implement
           </h2>
@@ -27,16 +39,28 @@ const Implement: React.FC<ImplementProps> = () => {
             running in no time. We built our documentation page to integrate
             payments functionality with ease.
           </p>
-        </div>
+        </motion.div>
       </section>
       <section className="lg:flex lg:items-center relative max-w-[1110px] mx-auto">
-        <Image
-          src={twoPhonesImg}
-          alt="screen of two phones"
-          className="w-[350px] sm:w-[363px] mx-auto mt-8 order-2 z-10 lg:w-[700px] lg:mr-[-3rem]"
-        />
+        <motion.div
+          className="order-2"
+          transition={{ duration: 0.3 }}
+          initial={{ x: 300 }}
+          whileInView={{ x: 0 }}
+        >
+          <Image
+            src={twoPhonesImg}
+            alt="screen of two phones"
+            className="w-[350px] sm:w-[363px] mx-auto mt-8 order-2 z-10 lg:w-[700px] lg:mr-[-3rem]"
+          />
+        </motion.div>
         <CircleBackground cssClasses="hidden lg:block absolute right-[-410px] w-[780px] h-[780px]" />
-        <div className="lg:text-start lg:w-[505px]">
+        <motion.div
+          transition={{ duration: 0.3 }}
+          initial={{ x: -300 }}
+          whileInView={{ x: 0 }}
+          className="lg:text-start lg:w-[505px]"
+        >
           <h2 className="text-4xl leading-9 tracking-[-0.276923px] text-sanJuanBlue sm:text-700 font-bold">
             Simple UI & UX
           </h2>
@@ -44,7 +68,7 @@ const Implement: React.FC<ImplementProps> = () => {
             Our pre-built form is easy to integrate in your app or website’s
             checkout flow and designed to optimize conversion.
           </p>
-        </div>
+        </motion.div>
       </section>
       <section className="sm:flex sm:gap-5  lg:mt-6 max-w-[1110px] mx-auto">
         <div className="my-6">
@@ -65,6 +89,7 @@ const Implement: React.FC<ImplementProps> = () => {
             src={bankingCoverageIcon}
             alt="banking covereage icon"
             className="mx-auto mb-8 sm:w-[88px] lg:w-[106px]"
+            loading="eager"
           ></Image>
           <h3 className="font-bold mb-4 text-300">Banking & Coverage</h3>
           <p className="text-200 tracking-[-0.115385px] font-publicSans text-lightSanJuanBlue max-w-[475px] mx-auto">

@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
+import React, { useEffect, useState } from "react";
+import desktopMemberImage from "../../../public/assets/about/desktop/image-team-members.jpg";
 import mobileMemberImage from "../../../public/assets/about/mobile/image-team-members.jpg";
 import tabletMemberImage from "../../../public/assets/about/tablet/image-team-members.jpg";
-import desktopMemberImage from "../../../public/assets/about/desktop/image-team-members.jpg";
-
 const Member: React.FC = () => {
   const [windowWidth, setWindowWidth] = useState<number>(0);
   const [currentImage, setCurrentImage] =
@@ -20,22 +20,13 @@ const Member: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    console.log(windowWidth);
-    // setWindowWidth(1000);
     const image =
-      windowWidth < 640
-        ? mobileMemberImage
-        : windowWidth < 1025
-        ? tabletMemberImage
-        : desktopMemberImage;
-
-    const test =
       windowWidth > 1024
         ? desktopMemberImage
         : windowWidth > 640
         ? tabletMemberImage
         : mobileMemberImage;
-    setCurrentImage(test);
+    setCurrentImage(image);
   }, [windowWidth]);
 
   return (
@@ -45,7 +36,13 @@ const Member: React.FC = () => {
           We empower innovators by delivering access to the financial system
         </h1>
         <div className="max-w-[689px] lg:max-w-[920px]">
-          <div className="mb-12 sm:flex sm:text-start sm:gap-12">
+          <motion.div
+            className="mb-12 sm:flex sm:text-start sm:gap-12"
+            transition={{ delay: 0.1 }}
+            initial={{ opacity: 0 }}
+            animate={{ y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+          >
             <h2 className="text-500 font-bold tracking-[-0.196154px] mb-4 sm:text-600 min-w-[180px]">
               Our Vision
             </h2>
@@ -56,8 +53,15 @@ const Member: React.FC = () => {
               products that solve big problems. We are deeply focused on
               democratizing financial services through technology.
             </p>
-          </div>
-          <div className="mb-[1.75rem] sm:flex sm:text-start sm:gap-12 ">
+          </motion.div>
+
+          <motion.div
+            className="mb-12 sm:flex sm:text-start sm:gap-12"
+            transition={{ delay: 0.1 }}
+            initial={{ opacity: 0 }}
+            animate={{ y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+          >
             <h2 className="text-500 font-bold tracking-[-0.196154px] mb-4 sm:text-600 min-w-[180px]">
               Our Business
             </h2>
@@ -67,14 +71,21 @@ const Member: React.FC = () => {
               insights for businesses and individuals, as well as robust
               reporting for traditional financial institutions and developers.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
-      <Image
-        src={currentImage}
-        alt="three pepole siting in the restaurant"
-        className="w-full py-12 "
-      />
+      <motion.div
+        transition={{ delay: 0.1 }}
+        initial={{ opacity: 0 }}
+        animate={{ y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+      >
+        <Image
+          src={currentImage}
+          alt="three pepole siting in the restaurant"
+          className="w-full py-12 "
+        />
+      </motion.div>
     </div>
   );
 };
