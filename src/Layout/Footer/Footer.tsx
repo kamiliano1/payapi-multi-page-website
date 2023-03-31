@@ -33,19 +33,19 @@ const Footer: React.FC<FooterProps> = () => {
           </Link>
           <div className="flex flex-col gap-10 sm:flex-row sm:items-center ">
             <Link
-              className="text-100 text-linkWaterWhite opacity-70 font-bold hover:opacity-100"
+              className="text-100 text-linkWaterWhite opacity-70 font-bold hover:opacity-100 z-50"
               href="pricing"
             >
               Pricing{" "}
             </Link>
             <Link
-              className="text-100 text-linkWaterWhite opacity-70 font-bold hover:opacity-100"
+              className="text-100 text-linkWaterWhite opacity-70 font-bold hover:opacity-100 z-50"
               href="about"
             >
               About{" "}
             </Link>
             <Link
-              className="text-100 text-linkWaterWhite opacity-70 font-bold hover:opacity-100"
+              className="text-100 text-linkWaterWhite opacity-70 font-bold hover:opacity-100 z-50"
               href="contact"
             >
               Contact{" "}

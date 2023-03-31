@@ -1,6 +1,4 @@
-import MainButton from "@/src/Layout/Buttons/MainButton";
 import FormEmail from "@/src/Layout/Input/FormEmail";
-import InputText from "@/src/Layout/Input/InputText";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -27,7 +25,7 @@ const Hero: React.FC<HeroProps> = () => {
         <FormEmail />
         <p className="text-100 font-publicSans text-lightSanJuanBlue mt-6 lg:mt-2 lg:px-3">
           Have any questions?{" "}
-          <Link className="font-bold" href="/contact">
+          <Link className="font-bold hover:text-sanJuanBlue" href="/contact">
             Contact Us
           </Link>
         </p>

@@ -22,8 +22,8 @@ const about = () => {
           href="./assets/favicon-32x32.png"
         />
       </Head>
-      <div className="">
-        <div className="max-w-[1400px] mx-auto overflow-hidden relative ">
+      <main className="">
+        <div className="overflow-hidden relative lg:px-20 max-w-[1400px] mx-auto ">
           <Navbar />
           <div className="w-[780px] h-[780px] bg-sanJuanBlue opacity-[.2] rounded-full absolute left-[74px] top-[-634px] sm:left-[440px] sm:top-[-550px] lg:left-[800px]"></div>
           <Member />
@@ -32,7 +32,7 @@ const about = () => {
           <main className=""></main>
         </div>
         <Footer />
-      </div>
+      </main>
     </>
   );
 };

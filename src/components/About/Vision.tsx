@@ -33,7 +33,7 @@ const Vision: React.FC<VisionProps> = () => {
           <p className="text-800 leading-[4.5rem] text-darkPink font-bold">
             10M+
           </p>
-          <span className="h-[1px] block bg-lightSanJuanBlue opacity-25 my-6"></span>
+          <span className="h-[1px] block bg-lightSanJuanBlue opacity-25 my-4"></span>
         </div>
       </div>
       <div className="text-center lg:text-start max-w-[1400px] mx-auto px-6 lg:w-[85%] lg:px-20">

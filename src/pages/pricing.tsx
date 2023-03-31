@@ -24,22 +24,11 @@ const pricing: React.FC<pricingProps> = () => {
           href="./assets/favicon-32x32.png"
         />
       </Head>
-      <div className="">
+      <div>
         <div className="overflow-hidden relative lg:px-20 max-w-[1400px] mx-auto">
-          {/* <CircleBackground cssClasses=" w-[780px] h-[780px] top-[-594px] left-[74px] object-none " /> */}
           <div className="w-[780px] h-[780px] bg-sanJuanBlue opacity-[.2] rounded-full absolute left-[74px] top-[-634px] sm:left-[440px] sm:top-[-550px] lg:left-[800px]"></div>
           <Navbar />
-          {/* <Navbar /> */}
-          {/* <Image
-            src={circle}
-            alt=""
-            // className="absolute w-[780px] h-[780px] top-[-544px]"
-            className="absolute w-[780px] h-[780px] top-[-644px] -right-[200px]
-            sm:top-[-525px] sm:-right-[410px]  lg:-right-[210px] lg:top-[-655px]"
-          /> */}
-          {/* <CircleBackground cssClasses=" w-[780px] h-[780px] left-[300px]" /> */}
-
-          <main className="">
+          <main>
             <Pricing />
           </main>
         </div>

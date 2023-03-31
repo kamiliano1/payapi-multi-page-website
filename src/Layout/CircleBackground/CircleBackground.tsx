@@ -26,7 +26,7 @@ const CircleBackground: React.FC<CircleBackgroundProps> = ({
     <Image
       src={
         // windowWidth > 692 && windowWidth < 1200 && router.pathname === "/"
-        windowWidth > 692 && windowWidth < 1200 && circleSection === "home"
+        windowWidth > 694 && windowWidth < 1200 && circleSection === "home"
           ? bigCircle
           : circle
       }
