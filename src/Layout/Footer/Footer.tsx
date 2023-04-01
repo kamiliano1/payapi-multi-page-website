@@ -20,9 +20,9 @@ const Footer: React.FC<FooterProps> = () => {
           className="sm:w-[980px] sm:h-[980px] bg-sanJuanBlue opacity-[.2] rounded-full absolute 
          top-[165px] 
         sm:top-[-208px] sm:left-[380px] 
-        lg:left-[1100px]"
+        lg:left-[950px]"
         ></div>
-        <div className="max-w-[1110px] mx-auto text-center sm:flex  pt-10 pb-14">
+        <div className="max-w-[1110px] mx-auto text-center sm:flex  pt-10 pb-14 sm:py-[1.938rem]">
           <Link className="text-400 mr-16 hover:opacity-70 " href="/">
             <Image src={webLogo} alt="page logo" className="mx-auto " />
           </Link>

@@ -26,7 +26,7 @@ const Work: React.FC<WorkProps> = () => {
               provide developers with the tools they need to create easy and
               accessible experiences for their users.{" "}
             </p>
-            <SecondaryDarkButton cssClasses="px-7 py-2 mt-8" />
+            <SecondaryDarkButton cssClasses="px-[1.9355rem] py-[.896rem] mt-8" />
           </InAnimation>
         </div>
       </div>

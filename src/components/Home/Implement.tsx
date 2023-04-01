@@ -13,7 +13,7 @@ type ImplementProps = {};
 const Implement: React.FC<ImplementProps> = () => {
   return (
     <div className="text-center px-6 sm:px-[2.4375rem] max-w-[1400px] mx-auto overflow-hidden lg:px-20">
-      <section className="lg:flex lg:items-center max-w-[1110px] mx-auto ">
+      <section className="lg:flex lg:items-center max-w-[1110px] mx-auto">
         <InAnimation
           cssClasses="w-[350px] sm:w-[450px] lg:w-auto mx-auto"
           transformValue="translateX(-200px)"
@@ -22,7 +22,7 @@ const Implement: React.FC<ImplementProps> = () => {
           <Image
             src={implementImg}
             alt="computer window with code"
-            className="lg:-ml-14"
+            className="lg:-ml-14 mt-12"
           />
         </InAnimation>
         <InAnimation
@@ -33,7 +33,7 @@ const Implement: React.FC<ImplementProps> = () => {
           <h2 className="text-4xl leading-9 tracking-[-0.276923px] text-sanJuanBlue sm:text-700 font-bold ">
             Easy to implement
           </h2>
-          <p className="text-200 font-publicSans text-lightSanJuanBlue mt-6 max-w-[475px] mx-auto lg:mx-0 ">
+          <p className="text-200 font-publicSans text-lightSanJuanBlue mt-6 max-w-[573px] mx-auto lg:mx-0 lg:max-w-[445px] ">
             Our API comes with just a few lines of code. You’ll be up and
             running in no time. We built our documentation page to integrate
             payments functionality with ease.
@@ -49,10 +49,10 @@ const Implement: React.FC<ImplementProps> = () => {
           <Image
             src={twoPhonesImg}
             alt="screen of two phones"
-            className="w-[350px] sm:w-[363px] mx-auto mt-8 order-2 z-10 lg:w-[700px] lg:mr-[-3rem]"
+            className="w-[350px] sm:w-[363px] mx-auto mt-8 order-2  lg:w-[700px] lg:mr-[-3rem] "
           />
         </InAnimation>
-        <CircleBackground cssClasses="hidden lg:block absolute right-[-410px] w-[780px] h-[780px]" />
+        <CircleBackground cssClasses="hidden lg:block absolute right-[-410px] w-[780px] h-[780px] z-[-20]" />
         <InAnimation
           cssClasses="lg:text-start lg:w-[505px]"
           transformValue="translateX(-200px)"
@@ -61,13 +61,13 @@ const Implement: React.FC<ImplementProps> = () => {
           <h2 className="text-4xl leading-9 tracking-[-0.276923px] text-sanJuanBlue sm:text-700 font-bold">
             Simple UI & UX
           </h2>
-          <p className="text-200 font-publicSans text-lightSanJuanBlue mt-6 sm:max-w-[445px] lg:mx-0 max-w-[475px] mx-auto">
+          <p className="text-200 font-publicSans text-lightSanJuanBlue mt-6 sm:max-w-[573px] lg:mx-0 mx-auto">
             Our pre-built form is easy to integrate in your app or website’s
             checkout flow and designed to optimize conversion.
           </p>
         </InAnimation>
       </section>
-      <section className="sm:flex sm:gap-5 lg:mt-6 max-w-[1110px] mx-auto">
+      <section className="sm:flex sm:gap-5 sm:mt-[5rem] max-w-[1110px] mx-auto">
         <InAnimation
           cssClasses="my-6"
           transformValue="translateX(-200px)"

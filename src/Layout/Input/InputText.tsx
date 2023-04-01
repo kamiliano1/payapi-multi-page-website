@@ -14,7 +14,7 @@ const InputText: React.FC<InputTextProps> = ({
       type={inputType}
       placeholder={inputPlaceholder}
       className="w-full rounded-3xl py-3 input-box-shadow px-3 mb-4 mt-5 font-publicSans
-    placeholder:font-bold placeholder:text-100 sm:w-[272px] sm:rounded-none"
+    placeholder:font-bold placeholder:text-100 sm:w-[250px] sm:rounded-none"
     />
   );
 };
