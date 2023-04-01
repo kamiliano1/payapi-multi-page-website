@@ -1,15 +1,9 @@
-import SecondaryDarkButton from "@/src/Layout/Buttons/SecondaryDarkButton";
 import SecondaryLightButton from "@/src/Layout/Buttons/SecondaryLightButton";
-import InputCheckbox from "@/src/Layout/Input/InputCheckbox";
+import InAnimation from "@/src/Layout/InAnimation/InAnimation";
 import InputCheckboxContact from "@/src/Layout/Input/InputCheckboxContact";
 
-import React, { use, useEffect } from "react";
-import {
-  SubmitHandler,
-  useForm,
-  FieldErrors,
-  FieldError,
-} from "react-hook-form";
+import React from "react";
+import { SubmitHandler, useForm } from "react-hook-form";
 type ContactFormProps = {};
 interface FormData {
   firstName: string;
@@ -19,20 +13,8 @@ interface FormData {
   message: string;
   isSubsribed: boolean;
 }
-interface ContactFormInputInterface {
-  error: FieldError | undefined;
-  type: string;
-  placeholder: string;
-  formName:
-    | "firstName"
-    | "email"
-    | "companyName"
-    | "title"
-    | "message"
-    | "isSubsribed";
-}
 
-const onSubmit: SubmitHandler<FormData> = (data) => console.log(data);
+const onSubmit: SubmitHandler<FormData> = (data) => "";
 
 const ContactForm: React.FC<ContactFormProps> = () => {
   const {
@@ -41,8 +23,11 @@ const ContactForm: React.FC<ContactFormProps> = () => {
     formState: { errors },
   } = useForm<FormData>();
   return (
-    <div className="text-center px-6 sm:max-w-[445px] mx-auto lg:px-0 lg:mx-0">
-      {" "}
+    <InAnimation
+      cssClasses="text-center px-6 sm:max-w-[445px] mx-auto lg:px-0 lg:mx-0"
+      transformValue="translateX(-200px)"
+      delay={0.2}
+    >
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col space-y-5"
@@ -127,7 +112,7 @@ const ContactForm: React.FC<ContactFormProps> = () => {
           buttonText="Submit"
         />
       </form>
-    </div>
+    </InAnimation>
   );
 };
 export default ContactForm;

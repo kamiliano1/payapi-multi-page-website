@@ -1,16 +1,10 @@
+import InAnimation from "@/src/Layout/InAnimation/InAnimation";
 import ReadyToStartForm from "@/src/Layout/Input/ReadyToStartForm";
 import React from "react";
-import CountUp, { useCountUp } from "react-countup";
-import { motion } from "framer-motion";
+import CountUp from "react-countup";
 type VisionProps = {};
 
 const Vision: React.FC<VisionProps> = () => {
-  useCountUp({
-    ref: "counter",
-    end: 1234567,
-    enableScrollSpy: true,
-    scrollSpyDelay: 1000,
-  });
   return (
     <div className="text-center lg:text-start max-w-[1400px] mx-auto z-10 px-6 sm:text-start">
       <div className="sm:flex sm:justify-between sm:gap-3 lg:gap-7 max-w-[1110px] mx-auto px-6 lg:px-0">
@@ -67,12 +61,10 @@ const Vision: React.FC<VisionProps> = () => {
       </div>
       <div className="text-center lg:text-start max-w-[1400px] mx-auto px-6 lg:w-[85%] lg:px-20">
         <div className="max-w-[689px] lg:max-w-[920px]">
-          <motion.div
-            className="mb-12 sm:flex sm:text-start sm:gap-12"
-            transition={{ delay: 0.1 }}
-            initial={{ opacity: 0 }}
-            animate={{ y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
+          <InAnimation
+            cssClasses="mb-12 sm:flex sm:text-start sm:gap-12"
+            transformValue="translateX(-200px)"
+            delay={0.2}
           >
             <h2 className="text-500 font-bold tracking-[-0.196154px] mb-4 sm:text-600 min-w-[180px]">
               The Culture
@@ -84,23 +76,21 @@ const Vision: React.FC<VisionProps> = () => {
               value cross-team collaboration and diversity of thought, no matter
               the job title.
             </p>
-          </motion.div>
-          <motion.div
-            className="mb-12 sm:flex sm:text-start sm:gap-12"
-            transition={{ delay: 0.1 }}
-            initial={{ opacity: 0 }}
-            animate={{ y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
+          </InAnimation>
+          <InAnimation
+            cssClasses="mb-12 sm:flex sm:text-start sm:gap-12"
+            transformValue="translateX(-200px)"
+            delay={0.2}
           >
             <h2 className="text-500 font-bold tracking-[-0.196154px] mb-4 sm:text-600 min-w-[180px]">
               The People
             </h2>
-            <p className="text-200 font-publicSans text-lightSanJuanBlue max-w-[635px]">
+            <p className="text-200 font-publicSans text-lightSanJuanBlue  max-w-[635px]">
               We`re all passionate about building a more efficient and inclusive
               financial infrastructure together. At PayAPI, we have diverse
               backgrounds and skills.
             </p>
-          </motion.div>
+          </InAnimation>
         </div>
       </div>
       <ReadyToStartForm cssClasses="pt-12" />

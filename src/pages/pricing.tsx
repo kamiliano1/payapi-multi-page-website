@@ -1,12 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
 import React from "react";
-import circle from "../../public/assets/shared/desktop/bg-pattern-circle.svg";
-import Member from "../components/About/Member";
-import Pricing from "../components/Pricing/Pricing";
-import CircleBackground from "../Layout/CircleBackground/CircleBackground";
 import Footer from "../Layout/Footer/Footer";
 import Navbar from "../Layout/Navbar/Navbar";
+import Pricing from "../components/Pricing/Pricing";
 
 type pricingProps = {};
 

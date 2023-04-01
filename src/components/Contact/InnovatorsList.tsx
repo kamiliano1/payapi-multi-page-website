@@ -1,5 +1,4 @@
 import CompanyList from "@/src/Layout/CompanyList/CompanyList";
-import ReadyToStartForm from "@/src/Layout/Input/ReadyToStartForm";
 import React from "react";
 type InnovatorsListProps = {};
 

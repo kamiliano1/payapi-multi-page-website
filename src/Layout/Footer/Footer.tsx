@@ -1,15 +1,10 @@
 import React from "react";
-// import webLogo from "../../../public/assets/shared/desktop/logo.svg";
-import webLogo from "../../../public/assets/shared/desktop/footer-logo.svg";
-import facebookLogo from "../../../public/assets/shared/desktop/facebook.svg";
-import twitterLogo from "../../../public/assets/shared/desktop/twitter.svg";
-import linkedinLogo from "../../../public/assets/shared/desktop/linkedin.svg";
 import Image from "next/image";
 import Link from "next/link";
-import circle from "../../../public/assets/shared/desktop/bg-pattern-circle.svg";
+import webLogo from "../../../public/assets/shared/desktop/footer-logo.svg";
 
+import { BsLinkedin, BsTwitter } from "react-icons/bs";
 import { GrFacebook } from "react-icons/gr";
-import { BsTwitter, BsLinkedin } from "react-icons/bs";
 import CircleBackground from "../CircleBackground/CircleBackground";
 type FooterProps = {};
 

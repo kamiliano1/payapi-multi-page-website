@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import InAnimation from "@/src/Layout/InAnimation/InAnimation";
 import Image, { StaticImageData } from "next/image";
 import React, { useEffect, useState } from "react";
 import desktopMemberImage from "../../../public/assets/about/desktop/image-team-members.jpg";
@@ -12,7 +12,7 @@ const Member: React.FC = () => {
     function handleWindowResize() {
       setWindowWidth(window.innerWidth);
     }
-
+    setWindowWidth(window.innerWidth);
     window.addEventListener("resize", handleWindowResize);
     return () => {
       window.removeEventListener("resize", handleWindowResize);
@@ -23,7 +23,7 @@ const Member: React.FC = () => {
     const image =
       windowWidth > 1024
         ? desktopMemberImage
-        : windowWidth > 640
+        : windowWidth > 694
         ? tabletMemberImage
         : mobileMemberImage;
     setCurrentImage(image);
@@ -36,12 +36,10 @@ const Member: React.FC = () => {
           We empower innovators by delivering access to the financial system
         </h1>
         <div className="max-w-[689px] lg:max-w-[920px]">
-          <motion.div
-            className="mb-12 sm:flex sm:text-start sm:gap-12"
-            transition={{ delay: 0.1 }}
-            initial={{ opacity: 0 }}
-            animate={{ y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
+          <InAnimation
+            cssClasses="mb-12 sm:flex sm:text-start sm:gap-12"
+            transformValue="translateX(-200px)"
+            delay={0.2}
           >
             <h2 className="text-500 font-bold tracking-[-0.196154px] mb-4 sm:text-600 min-w-[180px]">
               Our Vision
@@ -53,14 +51,11 @@ const Member: React.FC = () => {
               products that solve big problems. We are deeply focused on
               democratizing financial services through technology.
             </p>
-          </motion.div>
-
-          <motion.div
-            className="mb-12 sm:flex sm:text-start sm:gap-12"
-            transition={{ delay: 0.1 }}
-            initial={{ opacity: 0 }}
-            animate={{ y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
+          </InAnimation>
+          <InAnimation
+            cssClasses="mb-12 sm:flex sm:text-start sm:gap-12"
+            transformValue="translateX(-200px)"
+            delay={0.2}
           >
             <h2 className="text-500 font-bold tracking-[-0.196154px] mb-4 sm:text-600 min-w-[180px]">
               Our Business
@@ -71,21 +66,16 @@ const Member: React.FC = () => {
               insights for businesses and individuals, as well as robust
               reporting for traditional financial institutions and developers.
             </p>
-          </motion.div>
+          </InAnimation>
         </div>
       </div>
-      <motion.div
-        transition={{ delay: 0.1 }}
-        initial={{ opacity: 0 }}
-        animate={{ y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-      >
+      <InAnimation transformValue="translateX(200px)" delay={0.2}>
         <Image
           src={currentImage}
           alt="three pepole siting in the restaurant"
           className="w-full py-12 "
         />
-      </motion.div>
+      </InAnimation>
     </div>
   );
 };

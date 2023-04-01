@@ -2,7 +2,7 @@ import SecondaryLightButton from "@/src/Layout/Buttons/SecondaryLightButton";
 import InputCheckbox from "@/src/Layout/Input/InputCheckbox";
 import ReadyToStartForm from "@/src/Layout/Input/ReadyToStartForm";
 import React from "react";
-
+import InAnimation from "@/src/Layout/InAnimation/InAnimation";
 type PricingProps = {};
 
 const Pricing: React.FC<PricingProps> = () => {
@@ -13,7 +13,11 @@ const Pricing: React.FC<PricingProps> = () => {
       </h1>
       <section className="max-w-[1110px] mx-auto">
         <div className="sm:flex sm:gap-[10px] lg:gap-7">
-          <div className="max-w-[350px] mx-auto">
+          <InAnimation
+            cssClasses="max-w-[350px] mx-auto"
+            transformValue="translateX(-200px)"
+            delay={0.2}
+          >
             <h2 className="text-500 text-darkPink font-bold mb-4 mt-12 lg:text-600">
               Free Plan
             </h2>
@@ -41,8 +45,13 @@ const Pricing: React.FC<PricingProps> = () => {
               cssClasses="px-5 py-[.9rem]"
               buttonText="Request Access"
             />
-          </div>
-          <div className="max-w-[350px] mx-auto">
+          </InAnimation>
+
+          <InAnimation
+            cssClasses="max-w-[350px] mx-auto"
+            transformValue="translateX(-200px)"
+            delay={0.5}
+          >
             <h2 className="text-500 text-darkPink font-bold mb-4 mt-12 lg:text-600">
               Basic Plan
             </h2>
@@ -70,8 +79,12 @@ const Pricing: React.FC<PricingProps> = () => {
               cssClasses="px-5 py-[.9rem]"
               buttonText="Request Access"
             />
-          </div>
-          <div className="max-w-[350px] mx-auto">
+          </InAnimation>
+          <InAnimation
+            cssClasses="max-w-[350px] mx-auto"
+            transformValue="translateX(-200px)"
+            delay={0.8}
+          >
             <h2 className="text-500 text-darkPink font-bold mb-4 mt-12 lg:text-600">
               Premium Plan
             </h2>
@@ -99,7 +112,7 @@ const Pricing: React.FC<PricingProps> = () => {
               cssClasses="px-5 py-[.9rem]"
               buttonText="Request Access"
             />
-          </div>
+          </InAnimation>
         </div>
         <ReadyToStartForm />
       </section>

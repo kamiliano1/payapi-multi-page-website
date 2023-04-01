@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Image from "next/image";
-import checkIcon from "../../../public/assets/shared/desktop/icon-check.svg";
 import { BsCheck } from "react-icons/bs";
 type InputCheckboxContactProps = {};
 

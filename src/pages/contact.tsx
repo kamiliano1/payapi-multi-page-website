@@ -1,14 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
 import React from "react";
-import circle from "../../public/assets/shared/desktop/bg-pattern-circle.svg";
-import Member from "../components/About/Member";
-import Contact from "../components/Contact/Contact";
-import ContactForm from "../components/Contact/ContactForm";
-import InnovatorsList from "../components/Contact/InnovatorsList";
-import Pricing from "../components/Pricing/Pricing";
 import Footer from "../Layout/Footer/Footer";
 import Navbar from "../Layout/Navbar/Navbar";
+import Contact from "../components/Contact/Contact";
 
 type contactProps = {};
 
