@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import circle from "../../../public/assets/shared/desktop/bg-pattern-circle.svg";
 import bigCircle from "../../../public/assets/shared/desktop/bg-pattern-circle-big.svg";
-import { useRouter } from "next/router";
 type CircleBackgroundProps = { cssClasses: string; circleSection?: string };
 
 const CircleBackground: React.FC<CircleBackgroundProps> = ({
@@ -10,7 +9,6 @@ const CircleBackground: React.FC<CircleBackgroundProps> = ({
   circleSection,
 }) => {
   const [windowWidth, setWindowWidth] = useState<number>(0);
-  const router = useRouter();
 
   useEffect(() => {
     function handleWindowResize() {
@@ -24,8 +22,8 @@ const CircleBackground: React.FC<CircleBackgroundProps> = ({
   }, []);
   return (
     <Image
+      loading="eager"
       src={
-        // windowWidth > 692 && windowWidth < 1200 && router.pathname === "/"
         windowWidth > 694 && windowWidth < 1200 && circleSection === "home"
           ? bigCircle
           : circle
