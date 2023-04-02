@@ -1,10 +1,9 @@
+import InAnimation from "@/src/Layout/InAnimation/InAnimation";
 import FormEmail from "@/src/Layout/Input/FormEmail";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import singlePhoneImg from "../../../public/assets/home/desktop/illustration-phone-mockup.svg";
-import InAnimation from "@/src/Layout/InAnimation/InAnimation";
-import CircleBackground from "@/src/Layout/CircleBackground/CircleBackground";
 type HeroProps = {};
 
 const Hero: React.FC<HeroProps> = () => {

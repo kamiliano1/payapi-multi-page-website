@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
@@ -56,7 +56,8 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Building a multi-page project I was using for the first time Framer Motion.
+The most challenging part was to insert in the proper position rounded SVG background. I've spent a bit time to solve it but overall I'm happy with the result.
 
 ## Author
 

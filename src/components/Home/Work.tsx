@@ -13,7 +13,7 @@ const Work: React.FC<WorkProps> = () => {
         <div className="py-20 lg:flex lg:gap-x-5">
           <CompanyList iconColor={"text-linkWaterWhite lg:w-[40%]"} />
           <InAnimation
-            cssClasses="px-6 lg:text-start lg:px-0 lg:w-[50%]"
+            cssClasses="px-6 lg:text-start lg:px-0 lg:w-[50%] z-[100]"
             transformValue="translateX(-200px)"
             delay={0.7}
           >
@@ -26,7 +26,7 @@ const Work: React.FC<WorkProps> = () => {
               provide developers with the tools they need to create easy and
               accessible experiences for their users.{" "}
             </p>
-            <SecondaryDarkButton cssClasses="px-[1.9355rem] py-[.896rem] mt-8" />
+            <SecondaryDarkButton cssClasses="px-[1.9355rem] py-[.896rem] mt-8 bg-opacity-0" />
           </InAnimation>
         </div>
       </div>
@@ -34,8 +34,3 @@ const Work: React.FC<WorkProps> = () => {
   );
 };
 export default Work;
-
-// const defaultValue = {
-//   transformValue: "translateX(-200px)",
-//   delay:0.5
-// }
