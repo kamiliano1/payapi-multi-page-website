@@ -19,12 +19,12 @@ const InAnimation: React.FC<InAnimationProps> = ({
   return (
     <div
       className={cssClasses}
-      // ref={ref}
-      // style={{
-      //   transform: isInView ? "none" : transformValue,
-      //   opacity: isInView ? 1 : 0,
-      //   transition: `all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) ${delay}s`,
-      // }}
+      ref={ref}
+      style={{
+        transform: isInView ? "none" : transformValue,
+        opacity: isInView ? 1 : 0,
+        transition: `all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) ${delay}s`,
+      }}
     >
       {children}
     </div>
