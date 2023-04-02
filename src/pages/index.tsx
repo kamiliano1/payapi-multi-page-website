@@ -22,12 +22,14 @@ export default function Home() {
       </Head>
       <div className="overflow-hidden relative max-w-[1440px] mx-auto">
         <Navbar />
-        <CircleBackground
-          cssClasses="-z-[1] w-[780px] h-[780px] top-[-525px]
+        <header>
+          <CircleBackground
+            cssClasses="-z-[1] w-[780px] h-[780px] top-[-525px]
            sm:w-[949px] sm:h-[949px] sm:top-[-700px] lg:top-[-320px] lg:left-[700px]"
-          circleSection="home"
-        />
-        <Hero />
+            circleSection="home"
+          />
+          <Hero />
+        </header>
       </div>
       <main className="">
         <Work />
