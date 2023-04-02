@@ -4,7 +4,7 @@ import MainButton from "../Buttons/MainButton";
 
 const HorizontalNav: React.FC = () => {
   return (
-    <div className="hidden text-center items-center text-sanJuanBlue sm:flex  w-full ">
+    <div className="hidden text-center items-center text-sanJuanBlue sm:flex w-full ">
       <Link
         className="text-100 font-bold opacity-80 mr-10 hover:opacity-100"
         href="pricing"

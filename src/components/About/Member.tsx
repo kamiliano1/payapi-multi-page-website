@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import desktopMemberImage from "../../../public/assets/about/desktop/image-team-members.jpg";
 import mobileMemberImage from "../../../public/assets/about/mobile/image-team-members.jpg";
 import tabletMemberImage from "../../../public/assets/about/tablet/image-team-members.jpg";
+import CircleBackground from "@/src/Layout/CircleBackground/CircleBackground";
 const Member: React.FC = () => {
   const [windowWidth, setWindowWidth] = useState<number>(0);
   const [currentImage, setCurrentImage] =
@@ -30,12 +31,12 @@ const Member: React.FC = () => {
   }, [windowWidth]);
 
   return (
-    <div className="">
-      <div className="text-center lg:text-start max-w-[1400px] mx-auto z-10 px-6 lg:w-[85%] lg:px-20">
-        <h1 className="text-600 leading-9 font-bold mt-12 mb-10 tracking-[-0.196154px] sm:text-700 lg:text-800 sm:mt-[4.6875rem] max-w-[550px] lg:max-w-[630px] mx-auto lg:mx-0 ">
-          We empower innovators by delivering access to the financial system
-        </h1>
-        <div className="max-w-[689px] lg:max-w-[920px]">
+    <div>
+      <div className="text-center lg:text-start max-w-[1440px] mx-auto z-10 px-6 sm:px-[2.4375rem] lg:px-40 ">
+        <div className="lg:max-w-[920px] mx-auto">
+          <h1 className="text-600 leading-9 font-bold mt-12 mb-10 tracking-[-0.196154px] sm:text-700 lg:text-800 sm:mt-[4.6875rem] max-w-[550px] lg:max-w-[630px] mx-auto lg:mx-0 ">
+            We empower innovators by delivering access to the financial system
+          </h1>
           <InAnimation
             cssClasses="mb-12 sm:flex sm:text-start sm:gap-12"
             transformValue="translateX(-200px)"
@@ -53,7 +54,7 @@ const Member: React.FC = () => {
             </p>
           </InAnimation>
           <InAnimation
-            cssClasses="mb-12 sm:flex sm:text-start sm:gap-12"
+            cssClasses="mb-7 sm:flex sm:text-start sm:gap-12"
             transformValue="translateX(-200px)"
             delay={0.2}
           >
@@ -69,11 +70,19 @@ const Member: React.FC = () => {
           </InAnimation>
         </div>
       </div>
-      <InAnimation transformValue="translateX(200px)" delay={0.2}>
+      <InAnimation
+        transformValue="translateX(200px)"
+        cssClasses="relative max-w-[1440px] mx-auto "
+        delay={0.2}
+      >
         <Image
           src={currentImage}
           alt="three pepole siting in the restaurant"
           className="w-full py-12 "
+        />
+        <CircleBackground
+          cssClasses="-z-[1] hidden w-[780px] h-[780px] top-[-100px] left-[-500px]
+            lg:block"
         />
       </InAnimation>
     </div>

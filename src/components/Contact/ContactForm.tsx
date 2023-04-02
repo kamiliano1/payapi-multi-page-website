@@ -24,20 +24,20 @@ const ContactForm: React.FC<ContactFormProps> = () => {
   } = useForm<FormData>();
   return (
     <InAnimation
-      cssClasses="text-center px-6 sm:max-w-[445px] mx-auto lg:px-0 lg:mx-0"
+      cssClasses="text-center px-6 sm:max-w-[445px] mx-auto lg:px-0 lg:mx-0 flex-shrink-0"
       transformValue="translateX(-200px)"
       delay={0.2}
     >
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col space-y-5"
+        className="flex flex-col space-y-5 "
       >
         <div className="relative">
           <input
             {...register("firstName", { required: true })}
             type="text"
             placeholder="Name"
-            className={`w-full px-5 border-b-[1px] py-2 border-sanJuanBlue border-opacity-50 placeholder:opacity-50 focus:border-opacity-100 focus:outline-none  ${
+            className={`w-full px-5 border-b-[1px] py-2 border-sanJuanBlue border-opacity-50 placeholder:opacity-50 hover:border-opacity-80 focus:border-opacity-100 focus:outline-none  ${
               errors.firstName &&
               `border-[red] border-opacity-50 placeholder:text-[red]`
             }`}
@@ -61,7 +61,7 @@ const ContactForm: React.FC<ContactFormProps> = () => {
             })}
             type="text"
             placeholder="Email Address"
-            className={`w-full px-5 border-b-[1px] py-2 border-sanJuanBlue border-opacity-50 placeholder:opacity-50 focus:border-opacity-100 focus:outline-none  ${
+            className={`w-full px-5 border-b-[1px] py-2 border-sanJuanBlue border-opacity-50 placeholder:opacity-50 hover:border-opacity-80 focus:border-opacity-100 focus:outline-none  ${
               errors.email &&
               `border-[red] border-opacity-50 placeholder:text-[red]`
             }`}
@@ -79,7 +79,7 @@ const ContactForm: React.FC<ContactFormProps> = () => {
             {...register("companyName")}
             type="text"
             placeholder="Company Name"
-            className={`w-full px-5 border-b-[1px] py-2 border-sanJuanBlue border-opacity-50 placeholder:opacity-50 focus:border-opacity-100 focus:outline-none`}
+            className={`w-full px-5 border-b-[1px] py-2 border-sanJuanBlue border-opacity-50 placeholder:opacity-50 hover:border-opacity-80 focus:border-opacity-100 focus:outline-none`}
           />
         </div>
         <div className="relative">
@@ -87,7 +87,7 @@ const ContactForm: React.FC<ContactFormProps> = () => {
             {...register("title")}
             type="text"
             placeholder="Title"
-            className={`w-full px-5 border-b-[1px] py-2 border-sanJuanBlue border-opacity-50 placeholder:opacity-50 focus:border-opacity-100 focus:outline-none `}
+            className={`w-full px-5 border-b-[1px] py-2 border-sanJuanBlue border-opacity-50 placeholder:opacity-50 hover:border-opacity-80 focus:border-opacity-100 focus:outline-none `}
           />
         </div>
         <div className="relative">
@@ -108,7 +108,7 @@ const ContactForm: React.FC<ContactFormProps> = () => {
 
         <InputCheckboxContact />
         <SecondaryLightButton
-          cssClasses="px-8 py-2 self-start"
+          cssClasses="px-[3.1415rem] py-[.896rem] self-start"
           buttonText="Submit"
         />
       </form>

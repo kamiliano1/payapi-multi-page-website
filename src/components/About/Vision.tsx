@@ -6,7 +6,7 @@ type VisionProps = {};
 
 const Vision: React.FC<VisionProps> = () => {
   return (
-    <div className="text-center lg:text-start max-w-[1400px] mx-auto z-10 px-6 sm:text-start">
+    <div className="text-center lg:text-start max-w-[1440px] mx-auto z-10 px-6 sm:px-[2.4375rem] sm:text-start">
       <div className="sm:flex sm:justify-between sm:gap-3 lg:gap-7 max-w-[1110px] mx-auto px-6 lg:px-0">
         <div className="mb-8 w-[100%]">
           <span className="h-[1px] block bg-lightSanJuanBlue opacity-25 mb-4 sm:my-4"></span>
@@ -59,8 +59,8 @@ const Vision: React.FC<VisionProps> = () => {
           <span className="h-[1px] block bg-lightSanJuanBlue opacity-25 my-4"></span>
         </div>
       </div>
-      <div className="text-center lg:text-start max-w-[1400px] mx-auto px-6 lg:w-[85%] lg:px-20">
-        <div className="max-w-[689px] lg:max-w-[920px]">
+      <div className="text-center lg:text-start max-w-[1440px] mx-auto ">
+        <div className="lg:max-w-[920px] mx-auto">
           <InAnimation
             cssClasses="mb-12 sm:flex sm:text-start sm:gap-12"
             transformValue="translateX(-200px)"

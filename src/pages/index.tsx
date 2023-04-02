@@ -20,20 +20,20 @@ export default function Home() {
           href="./assets/favicon-32x32.png"
         />
       </Head>
-      <div className="overflow-hidden relative lg:px-20 max-w-[1400px] mx-auto">
+      <div className="overflow-hidden relative max-w-[1440px] mx-auto">
         <Navbar />
-        <main>
-          <CircleBackground
-            cssClasses="-z-[1] w-[780px] h-[780px] top-[-525px]
+        <CircleBackground
+          cssClasses="-z-[1] w-[780px] h-[780px] top-[-525px]
            sm:w-[949px] sm:h-[949px] sm:top-[-700px] lg:top-[-320px] lg:left-[700px]"
-            circleSection="home"
-          />
-          <Hero />
-          <Work />
-          <Implement />
-          <Footer />
-        </main>
+          circleSection="home"
+        />
+        <Hero />
       </div>
+      <main className="">
+        <Work />
+        <Implement />
+      </main>
+      <Footer />
     </>
   );
 }

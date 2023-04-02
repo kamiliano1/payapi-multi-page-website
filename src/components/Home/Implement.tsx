@@ -12,8 +12,8 @@ type ImplementProps = {};
 
 const Implement: React.FC<ImplementProps> = () => {
   return (
-    <div className="text-center px-6 sm:px-[2.4375rem] max-w-[1400px] mx-auto overflow-hidden lg:px-20">
-      <section className="lg:flex lg:items-center max-w-[1110px] mx-auto">
+    <div className="text-center px-6 sm:px-[2.4375rem] max-w-[1440px] mx-auto overflow-hidden lg:px-20">
+      <section className="lg:flex lg:items-center mx-auto">
         <InAnimation
           cssClasses="w-[350px] sm:w-[450px] lg:w-auto mx-auto"
           transformValue="translateX(-200px)"
@@ -40,7 +40,7 @@ const Implement: React.FC<ImplementProps> = () => {
           </p>
         </InAnimation>
       </section>
-      <section className="lg:flex lg:items-center relative max-w-[1110px] mx-auto">
+      <section className="lg:flex lg:items-center relative mx-auto">
         <InAnimation
           cssClasses="order-2"
           transformValue="translateX(200px)"
@@ -67,7 +67,7 @@ const Implement: React.FC<ImplementProps> = () => {
           </p>
         </InAnimation>
       </section>
-      <section className="sm:flex sm:gap-5 sm:mt-[5rem] max-w-[1110px] mx-auto">
+      <section className="sm:flex sm:gap-5 sm:mt-[5rem] mx-auto">
         <InAnimation
           cssClasses="my-6"
           transformValue="translateX(-200px)"

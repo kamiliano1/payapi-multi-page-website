@@ -1,10 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
-import React from "react";
+import CircleBackground from "../Layout/CircleBackground/CircleBackground";
 import Footer from "../Layout/Footer/Footer";
-import circle from "../../public/assets/shared/desktop/bg-pattern-circle.svg";
 import Navbar from "../Layout/Navbar/Navbar";
-import Pricing from "./pricing";
 import Member from "../components/About/Member";
 import Vision from "../components/About/Vision";
 
@@ -23,13 +20,13 @@ const about = () => {
         />
       </Head>
       <main className="">
-        <div className="overflow-hidden relative lg:px-20 max-w-[1400px] mx-auto ">
+        <div className="overflow-hidden relative ">
           <Navbar />
           <div className="w-[780px] h-[780px] bg-sanJuanBlue opacity-[.2] rounded-full absolute left-[74px] top-[-634px] sm:left-[440px] sm:top-[-550px] lg:left-[800px]"></div>
-          <Member />
-          <Vision />
-
-          <main className=""></main>
+          <main className="overflow-hidden max-w-[1440px] mx-auto">
+            <Member />
+            <Vision />
+          </main>
         </div>
         <Footer />
       </main>

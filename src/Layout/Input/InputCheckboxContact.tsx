@@ -1,22 +1,18 @@
 import React, { useState } from "react";
 import { BsCheck } from "react-icons/bs";
-type InputCheckboxContactProps = {};
 
-const InputCheckboxContact: React.FC<InputCheckboxContactProps> = () => {
+const InputCheckboxContact: React.FC = () => {
   const [checked, isChecked] = useState<boolean>(false);
   return (
-    <div className="flex items-center text-start justify-center gap-[1.625rem]">
+    <div
+      className="flex items-center cursor-pointer text-start justify-center gap-[1.625rem]"
+      onClick={() => isChecked((prev) => !prev)}
+    >
       <div>
         {checked ? (
-          <BsCheck
-            onClick={() => isChecked((prev) => !prev)}
-            className="text-500 bg-darkPink text-linkWaterWhite "
-          />
+          <BsCheck className="text-500 bg-darkPink text-linkWaterWhite " />
         ) : (
-          <span
-            className=" bg-lightSanJuanBlue opacity-40 w-[24px] h-[24px] block"
-            onClick={() => isChecked((prev) => !prev)}
-          ></span>
+          <span className=" bg-lightSanJuanBlue opacity-40 w-[24px] h-[24px] block"></span>
         )}
       </div>
       <p className="text-100 leading-[1.5625rem] font-publicSans text-sanJuanBlue w-[100%]">

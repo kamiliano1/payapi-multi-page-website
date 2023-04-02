@@ -14,9 +14,9 @@ type CompanyListProps = { iconColor: string };
 const CompanyList: React.FC<CompanyListProps> = ({ iconColor }) => {
   return (
     <div
-      className={`${iconColor} px-6 w-full lg:max-w-[550px] 
+      className={`${iconColor} sm:max-w-[536px] mx-auto lg:max-w-none px-6 
       grid grid-cols-[repeat(auto-fill,_minmax(140px,_1fr))] 
-      gap-y-10 gap-x-[2rem] place-content-center max-w-[536px] mx-auto
+      gap-y-10 gap-x-[2rem] place-content-center 
 order-2 lg:px-0 lg:gap-x-5 items-center`}
     >
       <InAnimation

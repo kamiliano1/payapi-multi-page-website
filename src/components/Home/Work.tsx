@@ -7,11 +7,11 @@ type WorkProps = {};
 
 const Work: React.FC<WorkProps> = () => {
   return (
-    <div className="bg-mirageBlue ">
+    <div className="bg-mirageBlue">
       <div className="text-center text-linkWaterWhite max-w-[1440px] relative overflow-hidden mx-auto lg:px-20">
         <CircleBackground cssClasses="w-[780px] h-[780px] left-0 top-[-590px] sm:top-[-575px] lg:top-[-420px] lg:left-[-300px]" />
-        <div className="py-20 lg:flex max-w-[1110px] mx-auto">
-          <CompanyList iconColor={"text-linkWaterWhite lg:w-[50%]"} />
+        <div className="py-20 lg:flex lg:gap-x-5">
+          <CompanyList iconColor={"text-linkWaterWhite lg:w-[40%]"} />
           <InAnimation
             cssClasses="px-6 lg:text-start lg:px-0 lg:w-[50%]"
             transformValue="translateX(-200px)"

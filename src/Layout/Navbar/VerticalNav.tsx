@@ -33,19 +33,19 @@ const VerticalNav: React.FC<VerticalNavProps> = ({ isOpen, closeNav }) => {
         </button>
         <span className="h-[1px] w-full bg-linkWaterWhite opacity-[0.15] mt-6"></span>
         <Link
-          className="text-400 opacity-70 text-linkWaterWhite mt-[2.6875rem]"
+          className="text-400 font-bold opacity-70 text-linkWaterWhite mt-[2.6875rem]"
           href="pricing"
         >
           Pricing{" "}
         </Link>
         <Link
-          className="text-400 opacity-70 text-linkWaterWhite py-8"
+          className="text-400 font-bold opacity-70 text-linkWaterWhite py-8"
           href="about"
         >
           About{" "}
         </Link>
         <Link
-          className="text-400 opacity-70 text-linkWaterWhite pb-8"
+          className="text-400 font-bold opacity-70 text-linkWaterWhite pb-8"
           href="contact"
         >
           Contact{" "}

@@ -5,7 +5,7 @@ import webLogo from "../../../public/assets/shared/desktop/logo.svg";
 import hamburgerIcon from "../../../public/assets/shared/mobile/menu.svg";
 import HorizontalNav from "./HorizontalNav";
 import VerticalNav from "./VerticalNav";
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState<number>(0);
   useEffect(() => {
@@ -22,7 +22,7 @@ const Navbar = () => {
     if (windowWidth > 695) setIsOpen(false);
   }, [windowWidth]);
   return (
-    <nav className="flex relative max-w-[1110px] mx-auto px-6 sm:px-[2.4375rem] lg:px-0">
+    <nav className="max-w-[1440px] mx-auto lg:px-20 relative overflow-hidden px-6 sm:px-[2.4375rem]">
       <div className="mt-10 bg flex items-center justify-between md:justify-start w-full ">
         <Link className="text-400 opacity-70 mr-16 hover:opacity-100" href="/">
           <Image src={webLogo} alt="page logo" className="sm:mr-10" />

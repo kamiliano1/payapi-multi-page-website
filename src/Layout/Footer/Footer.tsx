@@ -6,11 +6,11 @@ import webLogo from "../../../public/assets/shared/desktop/footer-logo.svg";
 import { BsLinkedin, BsTwitter } from "react-icons/bs";
 import { GrFacebook } from "react-icons/gr";
 import CircleBackground from "../CircleBackground/CircleBackground";
-type FooterProps = {};
 
-const Footer: React.FC<FooterProps> = () => {
+const Footer: React.FC = () => {
   return (
     <footer className="bg-mirageBlue">
+      <div></div>
       <div className="max-w-[1440px] mx-auto lg:px-20 relative overflow-hidden sm:px-[2.4375rem]">
         <CircleBackground
           cssClasses=" w-[780px] h-[780px] top-[165px] 
@@ -22,7 +22,7 @@ const Footer: React.FC<FooterProps> = () => {
         sm:top-[-208px] sm:left-[380px] 
         lg:left-[950px]"
         ></div>
-        <div className="max-w-[1110px] mx-auto text-center sm:flex  pt-10 pb-14 sm:py-[1.938rem]">
+        <div className="text-center sm:flex pt-10 pb-14 sm:py-[1.938rem]">
           <Link className="text-400 mr-16 hover:opacity-70 " href="/">
             <Image src={webLogo} alt="page logo" className="mx-auto " />
           </Link>
